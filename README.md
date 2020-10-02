@@ -1,4 +1,4 @@
-# Nintendo Switch Theme for RetroPie
+# Nintendo Switch Theme for EmulationStation using 480x320 displays
 Over the last few days I have been working on this theme further. I updated all the icons a few days ago and decided to update the rest of the theme. 
 
 (Pictures Below)
