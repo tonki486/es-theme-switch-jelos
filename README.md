@@ -1,4 +1,4 @@
-# Nintendo Switch Theme for EmulationStation using 480x320 displays
+# Nintendo Switch Theme for EmulationStation on 480x320 displays
 Over the last few days I have been working on this theme further. I updated all the icons a few days ago and decided to update the rest of the theme. 
 
 (Pictures Below)
@@ -24,10 +24,10 @@ PS & Xbox Buttons
 
 ![](https://snag.gy/Q62Z9q.jpg)
 
-4:3 System View
-
-![](https://snag.gy/lPzaud.jpg)
-
-4:3 Gamelist
-
-![](https://snag.gy/BbDfx8.jpg)
+# Fork notes - Jetup13
+- This fork was desgined for smaller displays that are around 480x320 (OGA, RGB10, RK2020, ect....)
+- Added more system images and renamed some names
+- Added a clock for supported emulationstation builds
+- Changed font size for gamelist and description to make it more visable
+- Changed release date to show only year instead of M/D/Y. This can be changed by removing the line <format>%Y</format> in the theme.xml
+- There will be more updates to come as I'll need to update the clock for lite.xml and I'll need to update the 4_3.xml as that hasn't been touched
