@@ -41,6 +41,8 @@ based on:       Switch Theme for Launchbox by Grila
 		<image name="arrowblock" extra="true">
 			<pos>0.03 0.22</pos>
 			<path>./assets/arrow_block.svg</path>
+			<size>0.023 0.047</size>
+			<origin>0 0</origin>
 		</image>	
 	
 	</view>
@@ -76,7 +78,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<textlist name="gamelist">
 			<fontPath>${mainFont}</fontPath>
 			<scrollSound>./assets/Move.wav</scrollSound>
-			<fontSize>0.028</fontSize>
+			<fontSize>0.033</fontSize>
 			<horizontalMargin>0.01</horizontalMargin>
 			<lineSpacing>2.3</lineSpacing>
 		</textlist>	
@@ -115,6 +117,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<datetime name="md_releasedate">
 			<forceUppercase>0</forceUppercase>
 			<fontPath>${mainFont}</fontPath>
+			<format>%Y</format>
 			<fontSize>0.028</fontSize>
 		</datetime>
 		
@@ -131,7 +134,7 @@ based on:       Switch Theme for Launchbox by Grila
 			<size>0.31 0.682</size>
 			<alignment>left</alignment>
 			<selectorImagePath>./assets/selector.png</selectorImagePath>
-			<selectorHeight>0.06</selectorHeight>
+			<selectorHeight>0.09</selectorHeight>
 			<selectorOffsetY>-0.008</selectorOffsetY>
 		</textlist>	
 		
@@ -141,11 +144,6 @@ based on:       Switch Theme for Launchbox by Grila
 			<size>0.309 0.336</size>
 			<pos>0.657 0.387</pos>
 		</text>
-		
-		<rating name="md_rating">
-			<pos>0.657 0.747</pos>
-			<size>0.27 0</size>
-		</rating>
 	
 	</view>
 	<view name="basic">
@@ -212,4 +210,19 @@ based on:       Switch Theme for Launchbox by Grila
 		</video>
 	
 </view>	
+  <view name="menu">
+    <menuBackground name="menubg">
+      <color>2d2d2d</color>
+    </menuBackground>
+  </view>
+   <view name="screen">
+    <text name="clock">
+      <color>FFFFFF</color>
+      <fontSize>0.035</fontSize>
+      <pos>0.050 0.922</pos>
+      <size>0.09 0.058</size>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+  </view>
 </theme>
