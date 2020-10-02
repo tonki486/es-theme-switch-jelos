@@ -14,7 +14,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<include>./settings/letters.xml</include>
 	
 	<!--Choose Theme Color (light or dark)-->
-	<include>./settings/light.xml</include>
+	<include>./settings/dark.xml</include>
 
 
 </theme>
