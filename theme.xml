@@ -214,6 +214,11 @@ based on:       Switch Theme for Launchbox by Grila
     <menuBackground name="menubg">
       <color>2d2d2d</color>
     </menuBackground>
+	<menuText name="menutext, menutitle">
+      <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
+      <fontSize>.039</fontSize>
+      <color>ffffff</color>
+    </menuText>
   </view>
    <view name="screen">
     <text name="clock">
