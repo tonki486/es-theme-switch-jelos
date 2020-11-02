@@ -30,4 +30,5 @@ PS & Xbox Buttons
 - Added a clock for supported emulationstation builds
 - Changed font size for gamelist and description to make it more visable
 - Changed release date to show only year instead of M/D/Y. This can be changed by removing the line <format>%Y</format> in the theme.xml
-- There will be more updates to come as I'll need to update the clock for lite.xml and I'll need to update the 4_3.xml as that hasn't been touched
+- Added Toggle options to switch between Dark and Light themes
+- Added Gridview
