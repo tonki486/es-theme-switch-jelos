@@ -29,7 +29,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	</view>
 	
-	<view name="system, basic, detailed, video">
+	<view name="system, basic, detailed, video, grid">
 		
 		<image name="gamelistbuttons, systembuttons" extra="true">
 			<pos>0.958 0.95</pos>
@@ -80,6 +80,19 @@ based on:       Switch Theme for Launchbox by Grila
 		</datetime>
 
 </view>
+       <view name="grid">
+       <text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+	        <pos>1 1</pos>
+       </text>
+       <datetime name="md_lastplayed, md_releasedate">
+	        <pos>1 1</pos>
+       </datetime>
+       <rating name="md_rating">
+	       <pos>1 1</pos>
+           </rating>
+
+</view>
+
 </theme>
 		
 		

@@ -10,11 +10,10 @@ based on:       Switch Theme for Launchbox by Grila
 <theme>
 	<formatVersion>4</formatVersion>
 	
-	<!-- Color Variables -->
+    	<!-- Color Variables -->
 	<variables>
 		
 		<backgroundColor>2d2d2d</backgroundColor>
- 
 		<mainColor>15c49e</mainColor>
 		<secondaryColor>fefefe</secondaryColor>
  
@@ -32,7 +31,7 @@ based on:       Switch Theme for Launchbox by Grila
 		
 	</view>
 		
-	<view name="system, basic, detailed, video">
+	<view name="system, basic, detailed, video, grid">
 		
 		<image name="background">
 			<color>${backgroundColor}</color>
@@ -48,7 +47,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	</view>
 	
-	<view name="detailed, video">
+	<view name="detailed, video, grid">
 		
 		<textlist name="gamelist">
 			<selectedColor>${mainColor}</selectedColor>
@@ -68,7 +67,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	</view>
 	
-	<view name="basic, detailed, video">
+	<view name="basic, detailed, video, grid">
 		
 		<text name="system_name_1" extra="true">
 			<color>${secondaryColor}</color>
@@ -86,6 +85,43 @@ based on:       Switch Theme for Launchbox by Grila
 		</textlist>	
 	
 	</view>
+	
+	<view name="screen">
+      <text name="clock">
+      <color>FFFFFF</color>
+      <fontSize>0.035</fontSize>
+      <pos>0.050 0.922</pos>
+      <size>0.09 0.058</size>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+    </view>
+	
+    <view name="menu">
+    <menuBackground name="menubg">
+      <color>2d2d2d</color>
+    </menuBackground>
+	<menuText name="menutext, menutitle">
+      <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
+      <fontSize>.039</fontSize>
+      <color>ffffff</color>
+    </menuText>
+	  <menuTextEdit name="menutextedit">
+      <inactive>./assets/dark/textinput_inactive.png</inactive>
+      <active>./assets/dark/textinput_active.png</active>
+    </menuTextEdit>
+	<menuText name="menufooter, menutextsmall">
+         <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
+         <fontSize>.029</fontSize>		 
+         <color>ffffff</color>
+    </menuText>
+    </view>
+ 
+    <view name="grid">
+		<text name="md_name">
+            <color>ffffff</color>
+        </text>
+	</view>
 
 <feature supported="carousel">
   
@@ -94,8 +130,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<text name="systemInfo">
       <color>${mainColor}</color>
 	</text>
-
-  </view>
+   </view>
 
 </feature>
  

@@ -14,7 +14,6 @@ based on:       Switch Theme for Launchbox by Grila
 	<variables>
 		
 		<backgroundColor>d9d9d9</backgroundColor>
- 
 		<mainColor>334ff0</mainColor>
 		<secondaryColor>222222</secondaryColor>
 		<systemColor>3aa5ab</systemColor>
@@ -33,7 +32,7 @@ based on:       Switch Theme for Launchbox by Grila
 		
 	</view>
 		
-	<view name="system, basic, detailed, video">
+	<view name="system, basic, detailed, video, grid">
 		
 		<image name="background">
 			<color>${backgroundColor}</color>
@@ -49,7 +48,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	</view>
 	
-	<view name="detailed, video">
+	<view name="detailed, video, grid">
 		
 		<textlist name="gamelist">
 			<selectedColor>${mainColor}</selectedColor>
@@ -69,7 +68,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	</view>
 	
-	<view name="basic, detailed, video">
+	<view name="basic, detailed, video, grid">
 		
 		<text name="system_name_1" extra="true">
 			<color>${secondaryColor}</color>
@@ -88,15 +87,48 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	</view>
 
+	<view name="screen">
+        <text name="clock">
+           <color>222222</color>
+           <fontSize>0.035</fontSize>
+           <pos>0.050 0.922</pos>
+           <size>0.09 0.058</size>
+           <alignment>left</alignment>
+           <verticalAlignment>center</verticalAlignment>
+    </text>
+  </view>
+  
+    <view name="menu">
+        <menuBackground name="menubg">
+         <color>d9d9d9</color>
+        </menuBackground>
+	<menuText name="menutext, menutitle">
+         <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
+         <fontSize>.039</fontSize>
+         <color>222222</color>
+	     <separatorColor>2d2d2d</separatorColor>
+    </menuText>
+	<menuText name="menufooter, menutextsmall">
+         <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
+         <fontSize>.029</fontSize>		 
+         <color>222222</color>
+	     <separatorColor>2d2d2d</separatorColor>
+    </menuText>
+    </view>
+
+    <view name="grid">
+		<text name="md_name">
+         <color>222222</color>
+        </text>
+    </view>
+
 <feature supported="carousel">
   
-  <view name="system">
-
+   <view name="system">
 	<text name="systemInfo">
-      <color>${systemColor}</color>
+          <color>${systemColor}</color>
 	</text>
-
-  </view>
+   </view>
 
 </feature>
  

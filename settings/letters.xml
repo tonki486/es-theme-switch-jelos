@@ -18,7 +18,7 @@ based on:       Switch Theme for Launchbox by Grila
 		
 		</view>
 		
-		<view name="basic, detailed, video">
+		<view name="basic, detailed, video, grid">
 		
 			<image name="gamelistbuttons" extra="true">
 				<path>./../assets/buttons/Xbox_Buttons.svg</path>
