@@ -22,6 +22,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<mainFont>./assets/Oxygen-Regular.ttf</mainFont>
 		<videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
 		<subset.colorset>Theme Color</subset.colorset>
+		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
 	</variables>
 	<!----------------------------------->
 	
@@ -255,7 +256,6 @@ based on:       Switch Theme for Launchbox by Grila
         <backgroundCornerSize>9 9</backgroundCornerSize>
         <selectionMode>image</selectionMode>
         <padding>5 5</padding>
-        <imageColor>FFFFFFB0</imageColor>
     </gridtile>
     </view>
 
@@ -270,5 +270,9 @@ based on:       Switch Theme for Launchbox by Grila
         <include name="no" displayName="${no}"/>
         <include name="yes" displayName="${yes}">./settings/gridvideos.xml</include>
     </subset>
-	
+	<subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./settings/gridblink.xml</include>
+  </subset>
+  
 </theme>
