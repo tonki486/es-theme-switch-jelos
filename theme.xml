@@ -23,6 +23,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
 		<subset.colorset>Theme Color</subset.colorset>
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
+		<uppercaseSubsetName>Uppercase for system name</uppercaseSubsetName>
 	</variables>
 	<!----------------------------------->
 	
@@ -140,7 +141,6 @@ based on:       Switch Theme for Launchbox by Grila
 		
 	<text name="system_name_1" extra="true">
 		<text>${system.fullName}</text>
-		<forceUppercase>0</forceUppercase>
 		<size>0.743 0.015</size>
 		<pos>0.063 0.235</pos>
 		<origin>0 0</origin>
@@ -263,6 +263,14 @@ based on:       Switch Theme for Launchbox by Grila
 	<subset name="colorset" displayName="${subset.colorset}">
         <include name="dark" displayName="${dark}">./settings/dark.xml</include>
         <include name="light" displayName="${light}">./settings/light.xml</include>
+		<include name="yellow" displayName="${yellow}">./settings/yellow.xml</include>
+		<include name="teal" displayName="${teal}">./settings/teal.xml</include>
+    </subset>
+  
+    <!-- Subset options for font. Links to variables -->
+    <subset name="system" displayName="${uppercaseSubsetName}">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./settings/systemnameuppercase.xml</include>
     </subset>
   
 	<!-- Subset options for grid views. Links to variables -->
