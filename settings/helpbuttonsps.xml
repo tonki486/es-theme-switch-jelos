@@ -1,0 +1,52 @@
+<!--
+theme name:		Switch
+version:		2.0
+author:			Lilbud
+email:			bvw20002010@gmail.com
+license:		creative commons CC-BY-NC-SA
+based on:       Switch Theme for Launchbox by Grila
+-->
+
+<theme>
+	<formatVersion>4</formatVersion>
+	
+
+	
+	<view name="system">
+		
+		<image name="systembuttons" extra="true">
+		    <path>./../assets/buttons/Playstation_Buttons_system.svg</path>
+	    </image>
+	</view>
+		
+	<view name="basic, detailed, video, grid">
+		
+		<image name="gamelistbuttons" extra="true">
+		    <path>./../assets/buttons/Playstation_Buttons.svg</path>
+		</image>
+	</view>
+		
+	
+	<view name="system">
+		
+		<image name="gamelistbuttons, systembuttons" extra="true">
+			<pos>0.958 0.95</pos>
+			<origin>1.0 0.5</origin>
+			<size>0.53 0.036</size>	
+		</image>
+	
+	</view>
+	
+	<view name="system, basic, detailed, video, grid">
+		
+		<image name="gamelistbuttons, systembuttons" extra="true">
+			<pos>0.958 0.95</pos>
+			<origin>1.0 0.5</origin>
+			<size>0.83 0.055</size>	
+		</image>
+	
+	</view>
+
+</theme>
+		
+		

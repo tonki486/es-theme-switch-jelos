@@ -260,8 +260,9 @@ based on:       Switch Theme for Launchbox by Grila
 
     <!-- Subset options for help buttons. Links to variables -->
 	<subset name="help" displayName="${helpSubsetName}">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/helpbuttons.xml</include>
+        <include name="no" displayName="${off}"/>
+        <include name="xb buttons" displayName="${xb buttons}">./settings/helpbuttons.xml</include>
+		<include name="ps buttons" displayName="${ps buttons}">./settings/helpbuttonsps.xml</include>
     </subset>
 
 	<!-- Subset options for theme color. Links to variables -->
