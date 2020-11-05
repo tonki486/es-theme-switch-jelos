@@ -20,10 +20,12 @@ System View - Light and Dark
 
 # Fork notes - Jetup13
 - This fork was desgined for smaller displays that are around 480x320 (OGA, RGB10, RK2020, ect....)
+- Added Gridview
 - Added more system images and renamed some names
 - Added a clock for supported emulationstation builds
-- Changed font size for gamelist and description to make it more visable
+- Changed font size for system, gamelist, and emulationstation main menu views
 - Changed release date to show only year instead of M/D/Y. This can be changed by removing the line <format>%Y</format> in the theme.xml
-- Added Toggle options to switch between Dark and Light themes
-- Added Gridview
-- Added 2 new colors (Yellow, Teal)
+- Added toggle options to switch between theme colors
+- Added toggle option for on-screen help image to turn off or on
+- Added toggle option to force system name to uppercase
+- Added 5 new theme colors (Black, Yellow, Teal, Mint Green, Rose Pink)
