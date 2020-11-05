@@ -1,0 +1,155 @@
+<!--
+theme name:		Switch
+version:		3.0
+author:			Lilbud
+email:			bvw20002010@gmail.com
+license:		creative commons CC-BY-NC-SA
+based on:       Switch Theme for Launchbox by Grila
+-->
+
+<theme>
+	<formatVersion>4</formatVersion>
+	
+    	<!-- Color Variables -->
+	<variables>
+		
+		<backgroundColor>FF9EEB</backgroundColor>
+		<mainColor>15c49e</mainColor>
+		<secondaryColor>2d2d2d</secondaryColor>
+ 
+	</variables>
+	
+	<view name="system">
+	
+		<text name="system_name_1" extra="true">
+			<color>2d2d2d</color>
+		</text>
+		
+		<image name="arrowblock" extra="true">
+			<color>2d2d2d</color>
+		</image>
+		
+	</view>
+		
+	<view name="system, basic, detailed, video, grid">
+		
+		<image name="background">
+			<color>${backgroundColor}</color>
+		</image>
+		
+		<image name="topline, bottomline" extra="true">
+			<color>${secondaryColor}</color>
+		</image>
+		
+		<image name="gamelistbuttons, systembuttons" extra="true">
+			<color>${secondaryColor}</color>
+		</image>
+	
+	</view>
+	
+	<view name="detailed, video, grid">
+		
+		<textlist name="gamelist">
+			<selectedColor>${mainColor}</selectedColor>
+			<primaryColor>${secondaryColor}</primaryColor>
+			<secondaryColor>${secondaryColor}</secondaryColor>
+			<selectorColor>${mainColor}</selectorColor>
+		</textlist>	
+		
+		<rating name="md_rating">
+			<filledPath>./../assets/dark/filled_rating.svg</filledPath>
+			<unfilledPath>./../assets/dark/unfilled_rating.svg</unfilledPath>
+		</rating>
+		
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_releasedate, md_description">
+			<color>${secondaryColor}</color>
+		</text>	
+		
+   <datetime name="md_releasedate">
+		<forceUppercase>0</forceUppercase>
+		<fontPath>${mainFont}</fontPath>
+		<format>%Y</format>
+		<fontSize>0.028</fontSize>
+	</datetime>
+	</view>
+	
+	<view name="basic, detailed, video, grid">
+		
+		<text name="system_name_1" extra="true">
+			<color>${secondaryColor}</color>
+		</text>	
+		
+	</view>
+	
+	<view name="basic">
+		
+		<textlist name="gamelist">
+			<selectedColor>${mainColor}</selectedColor>
+			<primaryColor>${secondaryColor}</primaryColor>
+			<secondaryColor>${secondaryColor}</secondaryColor>
+			<selectorColor>00000000</selectorColor>
+		</textlist>	
+	
+	</view>
+	
+	<view name="screen">
+      <text name="clock">
+      <color>2d2d2d</color>
+      <fontSize>0.035</fontSize>
+      <pos>0.050 0.922</pos>
+      <size>0.09 0.058</size>
+      <alignment>left</alignment>
+      <verticalAlignment>center</verticalAlignment>
+    </text>
+    </view>
+	
+    <view name="menu">
+    <menuBackground name="menubg">
+      <color>FF9EEB</color>
+    </menuBackground>
+	<menuText name="menutext">
+      <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
+      <fontSize>.039</fontSize>
+      <color>2d2d2d</color>
+	  <separatorColor>2d2d2d</separatorColor>
+	  <selectorColor>d0008b</selectorColor>
+    </menuText>
+	<menuText name="menutitle">
+      <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
+      <fontSize>.039</fontSize>
+      <color>2d2d2d</color>
+	  <selectorColor>FF9EEB</selectorColor>
+    </menuText>
+	  <menuTextEdit name="menutextedit">
+      <inactive>./assets/dark/textinput_inactive.png</inactive>
+      <active>./assets/dark/textinput_active.png</active>
+    </menuTextEdit>
+	<menuText name="menufooter, menutextsmall">
+      <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
+      <fontSize>.029</fontSize>		 
+      <color>2d2d2d</color>
+    </menuText>
+    </view>
+ 
+    <view name="grid">
+		<text name="md_name">
+            <color>2d2d2d</color>
+        </text>
+	</view>
+
+<feature supported="carousel">
+  
+  <view name="system">
+
+	<text name="systemInfo">
+      <color>2d2d2d</color>
+	</text>
+   </view>
+
+</feature>
+ 
+</theme>
+	
+	
+	
+	

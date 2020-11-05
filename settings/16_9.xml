@@ -12,12 +12,6 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	<view name="system">
 		
-		<image name="gamelistbuttons, systembuttons" extra="true">
-			<pos>0.958 0.95</pos>
-			<origin>1.0 0.5</origin>
-			<size>0.53 0.036</size>	
-		</image>
-		
 		<image name="arrowblock" extra="true">
 			<size>0.023 0.047</size>
 		</image>	
@@ -26,16 +20,6 @@ based on:       Switch Theme for Launchbox by Grila
 			<size>0.743 0.015</size>
 			<pos>0.063 0.235</pos>
 		</text>
-	
-	</view>
-	
-	<view name="system, basic, detailed, video, grid">
-		
-		<image name="gamelistbuttons, systembuttons" extra="true">
-			<pos>0.958 0.95</pos>
-			<origin>1.0 0.5</origin>
-			<size>0.83 0.055</size>	
-		</image>
 	
 	</view>
 	
