@@ -13,9 +13,6 @@ based on:       Switch Theme for Launchbox by Grila
 	<!--Choose Aspect Ratio (16_9, 4_3)-->
 	<include>./settings/16_9.xml</include>
 	<!----------------------------------->	
-	<!--Choose config (Might Delete later)-->
-	<include>./config.xml</include>
-	<!----------------------------------->	
 
 	<!--Variables such as theme configuration or font-->
 	<variables>
@@ -24,6 +21,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<subset.colorset>Theme Color</subset.colorset>
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
 		<uppercaseSubsetName>Uppercase for system name</uppercaseSubsetName>
+		<helpSubsetName>Show on-screen Help</helpSubsetName>
 	</variables>
 	<!----------------------------------->
 	
@@ -259,12 +257,22 @@ based on:       Switch Theme for Launchbox by Grila
     </gridtile>
     </view>
 
+
+    <!-- Subset options for help buttons. Links to variables -->
+	<subset name="help" displayName="${helpSubsetName}">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./settings/helpbuttons.xml</include>
+    </subset>
+
 	<!-- Subset options for theme color. Links to variables -->
 	<subset name="colorset" displayName="${subset.colorset}">
-        <include name="dark" displayName="${dark}">./settings/dark.xml</include>
-        <include name="light" displayName="${light}">./settings/light.xml</include>
-		<include name="yellow" displayName="${yellow}">./settings/yellow.xml</include>
-		<include name="teal" displayName="${teal}">./settings/teal.xml</include>
+        <include name="dark" displayName="${dark}">./settings/colors/dark.xml</include>
+        <include name="light" displayName="${light}">./settings/colors/light.xml</include>
+		<include name="black" displayName="${black}">./settings/colors/black.xml</include>
+		<include name="yellow" displayName="${yellow}">./settings/colors/yellow.xml</include>
+		<include name="rose pink" displayName="${rose pink}">./settings/colors/rosepink.xml</include>
+		<include name="teal" displayName="${teal}">./settings/colors/teal.xml</include>
+		<include name="mint green" displayName="${mint green}">./settings/colors/mintgreen.xml</include>
     </subset>
   
     <!-- Subset options for font. Links to variables -->
