@@ -272,6 +272,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="black" displayName="${black}">./settings/colors/black.xml</include>
 		<include name="yellow" displayName="${yellow}">./settings/colors/yellow.xml</include>
 		<include name="rose pink" displayName="${rose pink}">./settings/colors/rosepink.xml</include>
+		<include name="pastel red" displayName="${pastel red}">./settings/colors/pastelred.xml</include>
 		<include name="teal" displayName="${teal}">./settings/colors/teal.xml</include>
 		<include name="mint green" displayName="${mint green}">./settings/colors/mintgreen.xml</include>
     </subset>
