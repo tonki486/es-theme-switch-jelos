@@ -97,8 +97,9 @@ based on:       Switch Theme for Launchbox by Grila
 	<view name="screen">
         <text name="clock">
            <color>222222</color>
+		   <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
            <fontSize>0.035</fontSize>
-           <pos>0.050 0.922</pos>
+           <pos>0.045 0.921</pos>
            <size>0.09 0.058</size>
            <alignment>left</alignment>
            <verticalAlignment>center</verticalAlignment>
