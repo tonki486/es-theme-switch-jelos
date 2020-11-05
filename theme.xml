@@ -17,7 +17,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<!--Variables such as theme configuration or font-->
 	<variables>
 		<mainFont>./assets/Oxygen-Regular.ttf</mainFont>
-		<videoboxesSubsetName>Show Video in boxes</videoboxesSubsetName>
+		<videoboxesSubsetName>Videos</videoboxesSubsetName>
 		<subset.colorset>Theme Color</subset.colorset>
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
 		<uppercaseSubsetName>Uppercase for system name</uppercaseSubsetName>
@@ -285,8 +285,10 @@ based on:       Switch Theme for Launchbox by Grila
   
 	<!-- Subset options for grid views. Links to variables -->
     <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/gridvideos.xml</include>
+        <include name="off" displayName="${off}"/>
+        <include name="video in box" displayName="${box}">./settings/gridvideos.xml</include>
+		<include name="video in background" displayName="${video back}">./settings/backgroundgridvideos.xml</include>
+		<include name="video fade in" displayName="${fade in video}">./settings/fadegridvideos.xml</include>
     </subset>
 	<subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
         <include name="no" displayName="${no}"/>
