@@ -28,4 +28,4 @@ System View - Light and Dark
 - Added toggle options to switch between theme colors
 - Added toggle option for on-screen help image to turn off or on
 - Added toggle option to force system name to uppercase
-- Added 5 new theme colors (Black, Yellow, Teal, Mint Green, Rose Pink)
+- Added 6 new theme colors (Black, Yellow, Teal, Mint Green, Rose Pink, Red)
