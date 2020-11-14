@@ -22,7 +22,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
 		<uppercaseSubsetName>Uppercase for system name</uppercaseSubsetName>
 		<helpSubsetName>Show on-screen Help</helpSubsetName>
-		<logoSubsetName>Chose Logo set</logoSubsetName>
+		<logoSubsetName>Choose Logo set</logoSubsetName>
 	</variables>
 	<!----------------------------------->
 	
