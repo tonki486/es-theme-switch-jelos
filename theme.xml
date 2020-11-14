@@ -7,7 +7,7 @@ license:		creative commons CC-BY-NC-SA
 based on:       Switch Theme for Launchbox by Grila
 -->
 
-<theme>
+<theme defaultView="grid">
 	<formatVersion>7</formatVersion>
 	
 	<!--Choose Aspect Ratio (16_9, 4_3)-->
@@ -22,6 +22,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
 		<uppercaseSubsetName>Uppercase for system name</uppercaseSubsetName>
 		<helpSubsetName>Show on-screen Help</helpSubsetName>
+		<logoSubsetName>Chose Logo set</logoSubsetName>
 	</variables>
 	<!----------------------------------->
 	
@@ -133,10 +134,6 @@ based on:       Switch Theme for Launchbox by Grila
 
 	<!--System Options (When choosing system to select)-->
 	<view name="system">
-	<image name="logo">
-		<path>./art/${system.theme}.jpg</path>
-	</image>
-		
 	<text name="system_name_1" extra="true">
 		<text>${system.fullName}</text>
 		<size>0.743 0.015</size>
@@ -257,6 +254,11 @@ based on:       Switch Theme for Launchbox by Grila
     </gridtile>
     </view>
 
+    <!-- Subset options for help buttons. Links to variables -->
+	<subset name="logos" displayName="${logoSubsetName}">
+        <include name="normal" displayName="${normal}">./settings/normallogos.xml</include>
+		<include name="generic" displayName="${generic}">./settings/genericlogos.xml</include>
+    </subset>
 
     <!-- Subset options for help buttons. Links to variables -->
 	<subset name="help" displayName="${helpSubsetName}">
