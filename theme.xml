@@ -24,6 +24,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<uppercaseSubsetName>Uppercase system name</uppercaseSubsetName>
 		<helpSubsetName>Show on-screen help</helpSubsetName>
 		<logoSubsetName>Choose Logo set</logoSubsetName>
+		<descriptionSubsetName>Show description</descriptionSubsetName>
 	</variables>
 	<!----------------------------------->
 	
@@ -97,13 +98,6 @@ based on:       Switch Theme for Launchbox by Grila
 		<selectorHeight>0.09</selectorHeight>
 		<selectorOffsetY>-0.008</selectorOffsetY>
 	</textlist>	
-		
-	<text name="md_description">
-		<forceUppercase>0</forceUppercase>
-		<fontSize>0.025</fontSize>
-		<size>0.309 0.336</size>
-		<pos>0.657 0.387</pos>
-	</text>
 	</view>
 	
 	<view name="basic">
@@ -114,14 +108,6 @@ based on:       Switch Theme for Launchbox by Grila
 	</textlist>	
 	</view>
 		
-	<view name="detailed">
-	<image name="md_image">
-		<pos>0.360 0.180</pos>
-		<maxSize>0.277 0.615</maxSize>
-		<origin>0 0</origin>
-	</image>
-	</view>
-
 
 	<!--System Options (When choosing system to select)-->
     
@@ -151,23 +137,6 @@ based on:       Switch Theme for Launchbox by Grila
     </feature>
 
  	<!--Video Options-->
-    <view name="video">
-	
-	<image name="md_marquee">
-		<origin>0.5 0.5</origin>
-		<pos>0.494 0.68</pos>
-		<maxSize>0.268 0.228</maxSize>
-	</image>
-	  	  
-	<video name="md_video">
-		<pos>0.494 0.358</pos>
-		<maxSize>0.268 0.367</maxSize>
-		<origin>0.5 0.5</origin>
-		<delay>1.5</delay>
-		<showSnapshotNoVideo>true</showSnapshotNoVideo>
-		<showSnapshotDelay>true</showSnapshotDelay>
-	</video>
-    </view>	
 
 	<!--Gridview Options-->
   	<view name="grid">
@@ -232,6 +201,11 @@ based on:       Switch Theme for Launchbox by Grila
     <subset name="system" displayName="${uppercaseSubsetName}">
         <include name="no" displayName="${no}"/>
         <include name="yes" displayName="${yes}">./settings/systemnameuppercase.xml</include>
+    </subset>
+	
+    <subset name="description" displayName="${descriptionSubsetName}" appliesTo="detailed, video">
+        <include name="yes" displayName="${yes}">./settings/descriptionon.xml</include>
+        <include name="no" displayName="${no}">./settings/descriptionoff.xml</include>
     </subset>
 
     <!-- Subset options for help buttons. Links to variables -->
