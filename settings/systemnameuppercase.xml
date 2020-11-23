@@ -12,7 +12,7 @@ based on:       Switch Theme for Launchbox by Grila
 <theme>
   <formatVersion>7</formatVersion>
   
-	<view name="system">
+	<view name="system, grid, basic, detailed, video">
 	<text name="system_name_1" extra="true">
 		<forceUppercase>1</forceUppercase>
 	</text>

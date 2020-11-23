@@ -8,20 +8,7 @@ based on:       Switch Theme for Launchbox by Grila
 -->
 
 <theme>
-	<formatVersion>4</formatVersion>
-	
-	<view name="system">
-		
-		<image name="arrowblock" extra="true">
-			<size>0.023 0.047</size>
-		</image>	
-		
-		<text name="system_name_1" extra="true">
-			<size>0.743 0.015</size>
-			<pos>0.063 0.235</pos>
-		</text>
-	
-	</view>
+	<formatVersion>7</formatVersion>
 	
 	<view name="detailed, video">	
 

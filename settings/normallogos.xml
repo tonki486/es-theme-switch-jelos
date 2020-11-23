@@ -12,7 +12,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	<view name="system">
 	<image name="logo">
-		<path>./art/${system.theme}.jpg</path>
+		<path>./art/normal/${system.theme}.jpg</path>
 	</image>
     </view>
   

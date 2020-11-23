@@ -20,8 +20,9 @@ based on:       Switch Theme for Launchbox by Grila
 		<videoboxesSubsetName>Videos</videoboxesSubsetName>
 		<subset.colorset>Theme Color</subset.colorset>
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
-		<uppercaseSubsetName>Uppercase for system name</uppercaseSubsetName>
-		<helpSubsetName>Show on-screen Help</helpSubsetName>
+		<hidesystemnameSubsetName>Show system name</hidesystemnameSubsetName>
+		<uppercaseSubsetName>Uppercase system name</uppercaseSubsetName>
+		<helpSubsetName>Show on-screen help</helpSubsetName>
 		<logoSubsetName>Choose Logo set</logoSubsetName>
 	</variables>
 	<!----------------------------------->
@@ -60,16 +61,6 @@ based on:       Switch Theme for Launchbox by Grila
 		<horizontalMargin>0.01</horizontalMargin>
 		<lineSpacing>2.3</lineSpacing>
 	</textlist>	
-		
-	<text name="system_name_1" extra="true">
-		<text>${system.fullName}</text>
-		<forceUppercase>0</forceUppercase>
-		<size>0.743 0.031</size>
-		<pos>0.034 0.065</pos>
-		<fontSize>0.03</fontSize>
-		<alignment>left</alignment>
-		<fontPath>${mainFont}</fontPath>
-	</text>
 		
 	<image name="logo">
 		<color>00000000</color>
@@ -133,24 +124,6 @@ based on:       Switch Theme for Launchbox by Grila
 
 
 	<!--System Options (When choosing system to select)-->
-	<view name="system">
-	<text name="system_name_1" extra="true">
-		<text>${system.fullName}</text>
-		<size>0.743 0.015</size>
-		<pos>0.063 0.235</pos>
-		<origin>0 0</origin>
-		<fontSize>0.04</fontSize>
-		<alignment>left</alignment>
-		<fontPath>${mainFont}</fontPath>
-	</text>
-		
-	<image name="arrowblock" extra="true">
-		<pos>0.03 0.22</pos>
-		<path>./assets/arrow_block.svg</path>
-		<size>0.023 0.047</size>
-		<origin>0 0</origin>
-	</image>	
-	</view>
     
 	<feature supported="carousel">
   
@@ -230,16 +203,6 @@ based on:       Switch Theme for Launchbox by Grila
         <alignment>left</alignment>
     </text>
 		
-	<text name="system_name_1" extra="true">
-		<text>${system.fullName}</text>
-		<forceUppercase>0</forceUppercase>
-		<size>0.743 0.031</size>
-		<pos>0.034 0.025</pos>
-		<fontSize>0.03</fontSize>
-		<alignment>left</alignment>
-		<fontPath>${mainFont}</fontPath>
-	</text>
-		
 	<image name="logo">
 	    <color>00000000</color>
 	    <path>./assets/box.png</path>
@@ -258,6 +221,17 @@ based on:       Switch Theme for Launchbox by Grila
 	<subset name="logos" displayName="${logoSubsetName}">
         <include name="normal" displayName="${normal}">./settings/normallogos.xml</include>
 		<include name="generic" displayName="${generic}">./settings/genericlogos.xml</include>
+    </subset>
+	
+	<!-- Subset options for system name. Links to variables -->
+	<subset name="hidesystemnameSubsetName" displayName="${hidesystemnameSubsetName}">
+        <include name="on" displayName="${on}">./settings/systemname.xml</include>
+        <include name="off" displayName="${off}"/>
+    </subset>
+
+    <subset name="system" displayName="${uppercaseSubsetName}">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./settings/systemnameuppercase.xml</include>
     </subset>
 
     <!-- Subset options for help buttons. Links to variables -->
@@ -278,13 +252,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="teal" displayName="${teal}">./settings/colors/teal.xml</include>
 		<include name="mint green" displayName="${mint green}">./settings/colors/mintgreen.xml</include>
     </subset>
-  
-    <!-- Subset options for font. Links to variables -->
-    <subset name="system" displayName="${uppercaseSubsetName}">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/systemnameuppercase.xml</include>
-    </subset>
-  
+
 	<!-- Subset options for grid views. Links to variables -->
     <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
         <include name="off" displayName="${off}"/>
@@ -292,6 +260,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="video in background" displayName="${video back}">./settings/backgroundgridvideos.xml</include>
 		<include name="video fade in" displayName="${fade in video}">./settings/fadegridvideos.xml</include>
     </subset>
+	
 	<subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
         <include name="no" displayName="${no}"/>
         <include name="yes" displayName="${yes}">./settings/gridblink.xml</include>
