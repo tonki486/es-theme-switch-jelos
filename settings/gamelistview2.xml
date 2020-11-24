@@ -1,0 +1,27 @@
+<!--
+theme name:		Switch
+version:		3.0
+author:			Lilbud
+email:			bvw20002010@gmail.com
+license:		creative commons CC-BY-NC-SA
+based on:       Switch Theme for Launchbox by Grila
+-->
+
+<theme>
+	<formatVersion>7</formatVersion>
+
+	<view name="basic, detailed, video">
+	<textlist name="gamelist">
+		<fontSize>0.027</fontSize>
+	</textlist>	
+	</view>
+	
+	<view name="detailed, video">
+	<textlist name="gamelist">
+		<pos>0.00 0.182</pos>
+		<size>0.60 0.750</size>
+		<selectorHeight>0.08</selectorHeight>
+	</textlist>	
+	</view>
+	
+</theme>
