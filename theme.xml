@@ -27,6 +27,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<descriptionSubsetName>Show description</descriptionSubsetName>
 		<gamelistviewSubsetName>Change gamelist viewpoint</gamelistviewSubsetName>
 	    <uppercasegamelistSubsetName>Uppercase gamelist</uppercasegamelistSubsetName>
+		<topandbottomlineSubsetName>Show top and bottom line </topandbottomlineSubsetName>
 	</variables>
 	<!----------------------------------->
 	
@@ -46,14 +47,6 @@ based on:       Switch Theme for Launchbox by Grila
 		<path>./assets/box.png</path>
 		<zIndex>-100</zIndex>
 	</image>
-		
-	<image name="bottomline" extra="true">
-		<pos>0.5 0.9</pos>
-		<tile>false</tile>
-		<origin>0.5 0.5</origin>
-		<size>0.938 0.001</size>
-		<path>./assets/box.png</path>
-	</image>
 	</view>
 	
 	<view name="basic, detailed, video">
@@ -68,14 +61,6 @@ based on:       Switch Theme for Launchbox by Grila
 		<color>00000000</color>
 		<path>./assets/box.png</path>
 		<pos>1 1</pos>
-	</image>
-		
-	<image name="topline" extra="true">
-		<pos>0.5 0.13</pos>
-		<tile>false</tile>
-		<origin>0.5 0.5</origin>
-		<size>0.938 0.001</size>
-		<path>./assets/box.png</path>
 	</image>
 		
 	<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_releasedate, md_description" extra="true">
@@ -100,7 +85,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<view name="basic">
 	<textlist name="gamelist">
 		<pos>0.04 0.182</pos>
-		<size>0.924 0.682</size>
+		<size>0.924 0.69</size>
 		<alignment>center</alignment>
 	</textlist>	
 	</view>
@@ -195,20 +180,25 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="two" displayName="${two}">./settings/systemnametwo.xml</include>
         <include name="off" displayName="${off}"/>
     </subset>
+	
+    <subset name="gamelistview" displayName="${gamelistviewSubsetName}" appliesTo="detailed, video">
+        <include name="one" displayName="${one}">./settings/gamelistview1.xml</include>
+        <include name="two" displayName="${two}">./settings/gamelistview2.xml</include>
+    </subset>
+
+    <subset name="description" displayName="${descriptionSubsetName}" appliesTo="detailed, video">
+        <include name="yes" displayName="${yes}">./settings/descriptionon.xml</include>
+        <include name="no" displayName="${no}">./settings/descriptionoff.xml</include>
+    </subset>
 
     <subset name="system" displayName="${uppercaseSubsetName}">
         <include name="no" displayName="${no}"/>
         <include name="yes" displayName="${yes}">./settings/systemnameuppercase.xml</include>
     </subset>
 	
-    <subset name="description" displayName="${descriptionSubsetName}" appliesTo="detailed, video">
-        <include name="yes" displayName="${yes}">./settings/descriptionon.xml</include>
-        <include name="no" displayName="${no}">./settings/descriptionoff.xml</include>
-    </subset>
-
-    <subset name="gamelistview" displayName="${gamelistviewSubsetName}" appliesTo="detailed, video">
-        <include name="one" displayName="${one}">./settings/gamelistview1.xml</include>
-        <include name="two" displayName="${two}">./settings/gamelistview2.xml</include>
+    <subset name="topandbottomline" displayName="${topandbottomlineSubsetName}">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./settings/topandbottomline.xml</include>
     </subset>
 	
 	<subset name="uppercasegamelist" displayName="${uppercasegamelistSubsetName}" appliesTo="detailed, video, basic">
