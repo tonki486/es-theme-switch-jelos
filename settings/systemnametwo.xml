@@ -20,7 +20,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<origin>0 0</origin>
 		<fontSize>0.04</fontSize>
 		<alignment>left</alignment>
-		<fontPath>${mainFont}</fontPath>
+	    <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
 	</text>
 		
 	<image name="arrowblock" extra="true">

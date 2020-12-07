@@ -113,7 +113,7 @@ based on:       Switch Theme for Launchbox by Grila
 	    <pos>0.5 0.75</pos>
 	    <origin>0.5 0.5</origin>
 	    <forceUppercase>0</forceUppercase>
-	    <fontPath>${mainFont}</fontPath>
+	    <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
     </text>
     </view>
     </feature>
@@ -223,6 +223,8 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="pastel red" displayName="${pastel red}">./settings/colors/pastelred.xml</include>
 		<include name="teal" displayName="${teal}">./settings/colors/teal.xml</include>
 		<include name="mint green" displayName="${mint green}">./settings/colors/mintgreen.xml</include>
+		<include name="darkcrystal" displayName="${darkcrystal}">./settings/colors/darkcrystal.xml</include>
+		<include name="darkindigocrystal" displayName="${darkindigocrystal}">./settings/colors/darkindigocrystal.xml</include>
     </subset>
 
 	<!-- Subset options for grid views. Links to variables -->
