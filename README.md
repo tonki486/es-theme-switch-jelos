@@ -16,7 +16,7 @@ Pictures
 
 System View - Light and Dark
 
-![https://snag.gy/I2vYSK.jpg](https://snag.gy/I2vYSK.jpg)
+![https://i.imgur.com/aIRWDFB.png](https://i.imgur.com/aIRWDFB.png)
 
 # Fork notes - Jetup13
 - This fork was desgined for smaller displays that are around 480x320 (OGA, RGB10, RK2020, ect....)
@@ -28,4 +28,4 @@ System View - Light and Dark
 - Added toggle options to switch between theme colors
 - Added toggle option for on-screen help image to turn off or on
 - Added toggle option to force system name to uppercase
-- Added 6 new theme colors (Black, Yellow, Teal, Mint Green, Rose Pink, Red)
+- Added 11 new theme colors (Black, Yellow, Teal, Mint Green, Rose Pink, Red, Dark Crystal, Dark Indigo Crystal, Dark Blue Crystal, Dark Mint Crystal, Dark Red Crystal)
