@@ -223,8 +223,11 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="pastel red" displayName="${pastel red}">./settings/colors/pastelred.xml</include>
 		<include name="teal" displayName="${teal}">./settings/colors/teal.xml</include>
 		<include name="mint green" displayName="${mint green}">./settings/colors/mintgreen.xml</include>
-		<include name="darkcrystal" displayName="${darkcrystal}">./settings/colors/darkcrystal.xml</include>
-		<include name="darkindigocrystal" displayName="${darkindigocrystal}">./settings/colors/darkindigocrystal.xml</include>
+		<include name="dark crystal" displayName="${dark crystal}">./settings/colors/darkcrystal.xml</include>
+		<include name="dark indigo crystal" displayName="${dark indigo crystal}">./settings/colors/darkindigocrystal.xml</include>
+		<include name="dark blue rystal" displayName="${dark blue crystal}">./settings/colors/darkbluecrystal.xml</include>
+		<include name="dark mint crystal" displayName="${dark mint crystal}">./settings/colors/darkmintcrystal.xml</include>
+		<include name="dark red crystal" displayName="${dark red crystal}">./settings/colors/darkredcrystal.xml</include>
     </subset>
 
 	<!-- Subset options for grid views. Links to variables -->
