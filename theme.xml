@@ -171,6 +171,7 @@ based on:       Switch Theme for Launchbox by Grila
     <!-- Subset options for help buttons. Links to variables -->
 	<subset name="logos" displayName="${logoSubsetName}">
         <include name="normal" displayName="${normal}">./settings/normallogos.xml</include>
+		<include name="cover art" displayName="${cover art}">./settings/coverartlogos.xml</include>
 		<include name="generic" displayName="${generic}">./settings/genericlogos.xml</include>
     </subset>
 	
