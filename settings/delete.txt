@@ -1,0 +1,14 @@
+Only these folders and xml files should be left in this directory:
+colors\
+descriptions\
+esmenu\
+gamelist\
+gridview\
+logos\
+systemname\
+helpbuttons.xml
+helpbuttonsps.xml
+topanadbottomline.xml
+16_9.xml
+
+I've moved most of the xml files into folders for easeir edits

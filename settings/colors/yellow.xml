@@ -8,7 +8,7 @@ based on:       Switch Theme for Launchbox by Grila
 -->
 
 <theme>
-	<formatVersion>4</formatVersion>
+	<formatVersion>7</formatVersion>
 	
     	<!-- Color Variables -->
 	<variables>
@@ -102,34 +102,6 @@ based on:       Switch Theme for Launchbox by Grila
       <alignment>left</alignment>
       <verticalAlignment>center</verticalAlignment>
     </text>
-    </view>
-	
-    <view name="menu">
-    <menuBackground name="menubg">
-      <color>f4dc26</color>
-    </menuBackground>
-	<menuText name="menutext">
-      <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
-      <fontSize>.039</fontSize>
-      <color>2d2d2d</color>
-	  <separatorColor>2d2d2d</separatorColor>
-	  <selectorColor>bf9f1c</selectorColor>
-    </menuText>
-	<menuText name="menutitle">
-      <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
-      <fontSize>.039</fontSize>
-      <color>2d2d2d</color>
-	  <selectorColor>f4dc26</selectorColor>
-    </menuText>
-	  <menuTextEdit name="menutextedit">
-      <inactive>./assets/dark/textinput_inactive.png</inactive>
-      <active>./assets/dark/textinput_active.png</active>
-    </menuTextEdit>
-	<menuText name="menufooter, menutextsmall">
-      <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
-      <fontSize>.029</fontSize>		 
-      <color>2d2d2d</color>
-    </menuText>
     </view>
  
     <view name="grid">
