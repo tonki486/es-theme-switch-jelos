@@ -45,18 +45,5 @@ based on:       Switch Theme for Launchbox by Grila
 		<showSnapshotDelay>true</showSnapshotDelay>
 	</video>
     </view>	
-	
-	<view name="basic, detailed, video">
-
-	<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_releasedate, md_description" extra="true">
-		<forceUppercase>0</forceUppercase>
-		<fontSize>0.028</fontSize>
-		<fontPath>${mainFont}</fontPath>
-	</text>
-		
-	<text name="md_lbl_lastplayed, md_lbl_publisher, md_publsher, md_lbl_rating, md_lbl_playcount, md_playcount">
-		<pos>1 1</pos>
-	</text>
-	</view>
   
 </theme>
