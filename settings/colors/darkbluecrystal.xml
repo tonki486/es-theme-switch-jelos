@@ -35,6 +35,7 @@ based on:       Switch Theme for Launchbox by Grila
 		
 		<image name="background">
 			<path>./assets/backgrounds/darkbluecrystal.png</path>
+			<tile>false</tile>
 		</image>
 		
 		<image name="topline, bottomline" extra="true">
