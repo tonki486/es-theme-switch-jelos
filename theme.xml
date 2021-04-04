@@ -1,7 +1,8 @@
 <!--
+Fork by:        Jetup13
 theme name:		Switch
 version:		3.0
-author:			Lilbud
+OG author:		Lilbud
 email:			bvw20002010@gmail.com
 license:		creative commons CC-BY-NC-SA
 based on:       Switch Theme for Launchbox by Grila
@@ -167,7 +168,12 @@ based on:       Switch Theme for Launchbox by Grila
 
     </view>
 	
-		<!-- Subset options for theme color. Links to variables -->
+	<!-- Subset options for theme color. Links to variables -->
+	<subset name="ES Menu" displayName="${ESMenuSubsetName}">
+        <include name="header" displayName="${header}">./settings/esmenu/header.xml</include>
+		<include name="fullscreen" displayName="${fullscreen}">./settings/esmenu/fullscreen.xml</include>
+    </subset>
+		
 	<subset name="colorset" displayName="${subset.colorset}">
         <include name="dark" displayName="${dark}">./settings/colors/dark.xml</include>
         <include name="light" displayName="${light}">./settings/colors/light.xml</include>
@@ -191,12 +197,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="generic" displayName="${generic}">./settings/logos/genericlogos.xml</include>
     </subset>
 	
-	<subset name="ES Menu" displayName="${ESMenuSubsetName}">
-        <include name="header" displayName="${header}">./settings/esmenu/header.xml</include>
-		<include name="fullscreen" displayName="${fullscreen}">./settings/esmenu/fullscreen.xml</include>
-    </subset>
-	
-	<!-- Subset options for grid view blinking border colors. Links to variables -->
+	<!-- Subset options for grid views. Links to variables -->
 	<subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
         <include name="no" displayName="${no}"/>
         <include name="normal" displayName="${normal}">./settings/gridview/blinkcolors/normal.xml</include>
@@ -206,23 +207,25 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="red" displayName="${red}">./settings/gridview/blinkcolors/red.xml</include>
 		<include name="blue" displayName="${blue}">./settings/gridview/blinkcolors/blue.xml</include>
 		<include name="yellow" displayName="${yellow}">./settings/gridview/blinkcolors/yellow.xml</include>
-  </subset>
+    </subset>
+  
+    <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
+        <include name="off" displayName="${off}"/>
+        <include name="video in box" displayName="${box}">./settings/gridview/gridvideos.xml</include>
+		<include name="video in background" displayName="${video back}">./settings/gridview/backgroundgridvideos.xml</include>
+		<include name="video fade in" displayName="${fade in video}">./settings/gridview/fadegridvideos.xml</include>
+    </subset>
 	
 	<!-- Subset options for various system views and fonts. Links to variables -->
 	<subset name="hidesystemnameSubsetName" displayName="${hidesystemnameSubsetName}">
-        <include name="one" displayName="${one}">./settings/systemname/systemname.xml</include>
-		<include name="two" displayName="${two}">./settings/systemname/systemnametwo.xml</include>
+        <include name="Normal" displayName="${one}">./settings/systemname/systemname.xml</include>
+		<include name="Left Alignment" displayName="${two}">./settings/systemname/systemnametwo.xml</include>
         <include name="off" displayName="${off}"/>
     </subset>
 	
     <subset name="gamelistview" displayName="${gamelistviewSubsetName}" appliesTo="detailed, video">
-        <include name="one" displayName="${one}">./settings/gamelist/gamelistview1.xml</include>
-        <include name="two" displayName="${two}">./settings/gamelist/gamelistview2.xml</include>
-    </subset>
-
-    <subset name="description" displayName="${descriptionSubsetName}" appliesTo="detailed, video">
-        <include name="yes" displayName="${yes}">./settings/descriptions/descriptionon.xml</include>
-        <include name="no" displayName="${no}">./settings/descriptions/descriptionoff.xml</include>
+        <include name="Normal" displayName="${one}">./settings/gamelist/gamelistview1.xml</include>
+        <include name="Left Alignment" displayName="${two}">./settings/gamelist/gamelistview2.xml</include>
     </subset>
 
     <subset name="uppercasesystem" displayName="${uppercaseSubsetName}">
@@ -230,14 +233,19 @@ based on:       Switch Theme for Launchbox by Grila
         <include name="yes" displayName="${yes}">./settings/systemname/systemnameuppercase.xml</include>
     </subset>
 	
-    <subset name="topandbottomline" displayName="${topandbottomlineSubsetName}">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/topandbottomline.xml</include>
-    </subset>
-	
 	<subset name="uppercasegamelist" displayName="${uppercasegamelistSubsetName}" appliesTo="detailed, video, basic">
         <include name="no" displayName="${no}"/>
         <include name="yes" displayName="${yes}">./settings/gamelist/gamelistup.xml</include>
+    </subset>
+	
+    <subset name="description" displayName="${descriptionSubsetName}" appliesTo="detailed, video">
+        <include name="yes" displayName="${yes}">./settings/descriptions/descriptionon.xml</include>
+        <include name="no" displayName="${no}">./settings/descriptions/descriptionoff.xml</include>
+    </subset>
+	
+    <subset name="topandbottomline" displayName="${topandbottomlineSubsetName}">
+        <include name="no" displayName="${no}"/>
+        <include name="yes" displayName="${yes}">./settings/topandbottomline.xml</include>
     </subset>
 
     <!-- Subset options for help buttons. Links to variables -->
@@ -245,14 +253,6 @@ based on:       Switch Theme for Launchbox by Grila
         <include name="no" displayName="${off}"/>
         <include name="xb buttons" displayName="${xb buttons}">./settings/helpbuttons.xml</include>
 		<include name="ps buttons" displayName="${ps buttons}">./settings/helpbuttonsps.xml</include>
-    </subset>
-
-	<!-- Subset options for grid views. Links to variables -->
-    <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
-        <include name="off" displayName="${off}"/>
-        <include name="video in box" displayName="${box}">./settings/gridview/gridvideos.xml</include>
-		<include name="video in background" displayName="${video back}">./settings/gridview/backgroundgridvideos.xml</include>
-		<include name="video fade in" displayName="${fade in video}">./settings/gridview/fadegridvideos.xml</include>
     </subset>
   
 </theme>
