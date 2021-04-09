@@ -42,7 +42,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<image name="gamelistbuttons, systembuttons" extra="true">
 			<pos>0.958 0.95</pos>
 			<origin>1.0 0.5</origin>
-			<size>0.83 0.055</size>	
+			<size>0.9 0.055</size>	
 		</image>
 	
 	</view>
