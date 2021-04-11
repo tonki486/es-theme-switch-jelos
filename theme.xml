@@ -18,7 +18,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<mainFont>./assets/Oxygen-Regular.ttf</mainFont>
 		<subset.colorset>Theme Color</subset.colorset>
 		<logoSubsetName>Choose Logo set</logoSubsetName>
-		<ESMenuSubsetName>Choose Emulationstation That's In Use</ESMenuSubsetName>
+		<ESMenuSubsetName>Emulationstation That's In Use</ESMenuSubsetName>
 		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
 		<hidesystemnameSubsetName>Show system name</hidesystemnameSubsetName>
 		<gamelistviewSubsetName>Change gamelist viewpoint</gamelistviewSubsetName>
