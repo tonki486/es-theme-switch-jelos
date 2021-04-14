@@ -1,25 +1,14 @@
-# Nintendo Switch Theme for EmulationStation on 480x320 displays
-Over the last few days I have been working on this theme further. I updated all the icons a few days ago and decided to update the rest of the theme. 
+# Nintendo Switch Theme for EmulationStation on smaller displays (480x320 and 640x480)
+Over the last few days I have been working on this theme further. I updated all the icons a few days ago and decided to update the rest of the theme.
 
-(Pictures Below)
-
-There are many changes in this newest version, including:
-
-- The Switch Theme no longer has two separate versions. As of this update, the light and dark variants have now been combined into one theme. The colors are toggleable via the theme.xml file. 
-- Colors updated to match system
-- Selector bar has been added. Slim line next to selected game name. 
-- Marquee is now centered under video
-
-Another big thing is the slimming down of the theme. Between the combination of light and dark colors and compression on the tiles, the whole theme is now under 5mb! Also, the memory needed is shrunken as well. You can get away with as little as 20mb of VRAM. Good news to those with full game sets and videos!
-
-Pictures
+Big Screen version can be found [here](https://drive.google.com/file/d/11dJp0853Fvu9UHS1tP2YIZBIfvChuaZh/view?usp=sharing)
 
 System View - Light and Dark
 
 ![https://i.imgur.com/aIRWDFB.png](https://i.imgur.com/aIRWDFB.png)
 
 # Fork notes - Jetup13
-- This fork was desgined for smaller displays that are around 480x320 (OGA, RGB10, RK2020, ect....)
+- This fork was desgined for smaller displays that are around 480x320 (OGA, RGB10, RK2020, ect....) or 640x480 (RG351V)
 - Added Gridview
 - Added more system images and renamed some names
 - Added a clock for supported emulationstation builds
