@@ -20,6 +20,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<origin>0.5 0.5</origin>
 		<delay>1.5</delay>
         <zIndex>50</zIndex>
+		<effect>none</effect>
 	</video>
 	
   </customView>

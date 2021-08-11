@@ -38,6 +38,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<delay>1.5</delay>
 		<showSnapshotNoVideo>true</showSnapshotNoVideo>
 		<showSnapshotDelay>true</showSnapshotDelay>
+		<effect>none</effect>
 	</video>
 	</view>
 	<view name="basic, detailed, video">
