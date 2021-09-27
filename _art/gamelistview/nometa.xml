@@ -9,7 +9,7 @@
         <horizontalMargin>0.01</horizontalMargin>
         <origin>1.05 0.075</origin>
         <lineSpacing>1.4</lineSpacing>
-		<size>.49 .78</size>
+        <size>.49 .78</size>
 	</textlist>
 	
     <video name="md_video">
