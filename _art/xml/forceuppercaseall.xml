@@ -1,0 +1,17 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="basic, detailed, video">	
+
+    <textlist name="gamelist">
+	    <forceUppercase>1</forceUppercase>
+	</textlist>
+	</view>
+	
+	<view name="system">
+	<text name="system_name_1" extra="true">
+		<forceUppercase>1</forceUppercase>
+	</text>
+	</view>
+	
+  
+</theme>

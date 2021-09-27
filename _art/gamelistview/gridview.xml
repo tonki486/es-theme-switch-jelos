@@ -28,8 +28,7 @@
     </text>
 	
     <ninepatch name="gridtile.background:selected">
-      <animateColor>FFFFFF</animateColor>
-      <animateColorTime>800</animateColorTime>
+      <color>FFFFFF</color>
     </ninepatch>
 		
 	<text name="md_name">

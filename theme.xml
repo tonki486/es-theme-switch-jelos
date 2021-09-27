@@ -1,7 +1,7 @@
 <!--
 Fork by:        Jetup13
 theme name:		Switch
-version:		4.0
+version:		4.1
 OG author:		Lilbud
 email:			bvw20002010@gmail.com
 license:		creative commons CC-BY-NC-SA
@@ -21,6 +21,7 @@ based on:       Switch Theme for Launchbox by Grila
 	   <systemview>System Icon Style</systemview>
 	   <gamelistview>Detailed Gamelist View Style</gamelistview>
 	   <tabb>Show Top and Bottom Bar</tabb>
+	   <forceupper>Force Uppercase</forceupper>
 	</variables>
 	
 	<subset name="colorset" displayName="${subset.colorset}">
@@ -52,6 +53,13 @@ based on:       Switch Theme for Launchbox by Grila
        <include name="no"/>
     </subset>
 	
+	<subset name="Force Uppercase" displayName="${forceupper}">
+	   <include name="no"/>
+	   <include name="Gamelist">./_art/xml/forceuppercasegamelist.xml</include>
+	   <include name="System Name">./_art/xml/forceuppercasesystemname.xml</include>
+	   <include name="System Name and Gamelist">./_art/xml/forceuppercaseall.xml</include>
+    </subset>
+	
 	<view name="system, basic, detailed, video, grid">
 	<image name="background" extra="true">
 		<pos>0 0</pos>
@@ -67,8 +75,6 @@ based on:       Switch Theme for Launchbox by Grila
 	<textlist name="gamelist">
 		<fontPath>${mainFont}</fontPath>
 		<scrollSound>./_art/assets/Move.wav</scrollSound>
-		<horizontalMargin>0.01</horizontalMargin>
-		<lineSpacing>2</lineSpacing>
 		<size>1 .8</size>
 	</textlist>	
 	</view>
@@ -77,9 +83,6 @@ based on:       Switch Theme for Launchbox by Grila
 	<textlist name="gamelist">
 		<fontPath>${mainFont}</fontPath>
 		<scrollSound>./_art/assets/Move.wav</scrollSound>
-		<horizontalMargin>0.01</horizontalMargin>
-		<lineSpacing>2.3</lineSpacing>
-		<size>.49 .75</size>
 	</textlist>	
 		
 	<image name="logo">
