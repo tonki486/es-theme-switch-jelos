@@ -1,0 +1,10 @@
+<theme defaultView="grid">
+	<formatVersion>7</formatVersion>
+	
+	<view name="system">
+	<image name="logo">
+		<path>./../_art/artwork/${system.theme}.jpg</path>
+	</image>
+    </view>
+
+</theme>

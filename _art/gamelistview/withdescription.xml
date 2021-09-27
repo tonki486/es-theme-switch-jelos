@@ -1,0 +1,45 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+    <view name="detailed,video">
+	<textlist name="gamelist">
+        <fontPath>./../_art/Acre.otf</fontPath>
+        <fontSize>0.04</fontSize>
+        <alignment>left</alignment>
+        <horizontalMargin>0.01</horizontalMargin>
+        <origin>1.05 0.05</origin>
+	</textlist>
+	
+    <video name="md_video">
+         <origin>0.5 0.5</origin>
+         <pos>0.75 0.4</pos>
+         <maxSize>0.48 0.48</maxSize>
+         <delay>1</delay>
+         <zIndex>2</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+		 <effect>none</effect>
+    </video>
+
+    <text name="md_description">
+	
+      <pos>0.50 0.685</pos>
+      <size>0.5 0.244</size>
+	  <alignment>center</alignment>
+      <color>${mainColor}</color>
+      <fontSize>0.032</fontSize>
+      <fontPath>./../_art/Acre.otf</fontPath>
+	  
+    </text>
+	<text name="md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+	     <pos>1 1</pos>
+    </text>
+    <datetime name="md_lastplayed, md_releasedate">
+	     <pos>1 1</pos>
+    </datetime>
+    <rating name="md_rating">
+	       <pos>1 1</pos>
+    </rating>
+	</view>
+	
+</theme>

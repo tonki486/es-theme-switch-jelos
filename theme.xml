@@ -1,7 +1,7 @@
 <!--
 Fork by:        Jetup13
 theme name:		Switch
-version:		3.0
+version:		4.0
 OG author:		Lilbud
 email:			bvw20002010@gmail.com
 license:		creative commons CC-BY-NC-SA
@@ -11,50 +11,75 @@ based on:       Switch Theme for Launchbox by Grila
 <theme defaultView="grid">
 	<formatVersion>7</formatVersion>
 	
-	
-    <include>./settings/16_9.xml</include>
-	<!--Variables such as theme configuration or font-->
+	<include>./_art/xml/artworklogos.xml</include>
+	<include>./_art/xml/hidden.xml</include>
+	<include>./_art/gamelistview/basicview.xml</include>
+	<include>./_art/gamelistview/gridview.xml</include>
 	<variables>
-		<mainFont>./assets/Oxygen-Regular.ttf</mainFont>
-		<subset.colorset>Theme Color</subset.colorset>
-		<logoSubsetName>Choose Logo set</logoSubsetName>
-		<ESMenuSubsetName>Emulationstation Screen Size</ESMenuSubsetName>
-		<blinkBorderSubsetName>Blinking borders</blinkBorderSubsetName>
-		<hidesystemnameSubsetName>Show system name</hidesystemnameSubsetName>
-		<gamelistviewSubsetName>Change gamelist viewpoint</gamelistviewSubsetName>
-		<descriptionSubsetName>Show description</descriptionSubsetName>
-		<uppercaseSubsetName>Uppercase system name</uppercaseSubsetName>
-		<topandbottomlineSubsetName>Show top and bottom line </topandbottomlineSubsetName>
-		<uppercasegamelistSubsetName>Uppercase gamelist</uppercasegamelistSubsetName>
-		<helpSubsetName>Show on-screen help</helpSubsetName>
-		<videoboxesSubsetName>Videos</videoboxesSubsetName>
+	   <mainFont>./_art/Acre.otf</mainFont>
+	   <subset.colorset>Theme Color</subset.colorset>
+	   <systemview>System Icon Style</systemview>
+	   <gamelistview>Detailed Gamelist View Style</gamelistview>
+	   <tabb>Show Top and Bottom Bar</tabb>
 	</variables>
-	<!----------------------------------->
 	
-	<!--Gamelist view options-->
-	<view name="system, basic, detailed, video, grid">	
-	<helpsystem name="help">
-		<textColor>22222200</textColor>
-		<iconColor>22222200</iconColor>
-		<pos>1 1</pos>
-	</helpsystem>
-		
+	<subset name="colorset" displayName="${subset.colorset}">
+       <include name="dark">./_art/colors/dark.xml</include>
+	   <include name="teal">./_art/colors/teal.xml</include>
+	   <include name="royal blue">./_art/colors/royalblue.xml</include>
+	   <include name="mint green">./_art/colors/mintgreen.xml</include>
+	   <include name="pastel red">./_art/colors/pastelred.xml</include>
+	   <include name="pastel pink">./_art/colors/pastelpink.xml</include>
+	   <include name="orange">./_art/colors/orange.xml</include>
+	   <include name="yellow">./_art/colors/yellow.xml</include>
+	   <include name="violet">./_art/colors/violet.xml</include>
+	   <include name="light">./_art/colors/light.xml</include>
+    </subset>
+	
+	<subset name="systemview" displayName="${systemview}">
+       <include name="default">./_art/systemview/default.xml</include>
+       <include name="large">./_art/systemview/large.xml</include>
+    </subset>
+	
+	<subset name="gamelistview" displayName="${gamelistview}">
+       <include name="No Metadata">./_art/gamelistview/nometa.xml</include>
+       <include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
+	   <include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
+    </subset>
+	
+	<subset name="Top and Bottom Bar" displayName="${tabb}">
+	   <include name="yes">./_art/xml/topandbottomline.xml</include>
+       <include name="no"/>
+    </subset>
+	
+	<view name="system, basic, detailed, video, grid">
 	<image name="background" extra="true">
 		<pos>0 0</pos>
 		<tile>true</tile>
 		<origin>0 0</origin>
 		<size>1 1</size>
-		<path>./assets/box.png</path>
+		<path>./_art/assets/box.png</path>
 		<zIndex>-100</zIndex>
 	</image>
 	</view>
 	
-	<view name="basic, detailed, video">
+	<view name="basic">
 	<textlist name="gamelist">
 		<fontPath>${mainFont}</fontPath>
-		<scrollSound>./assets/Move.wav</scrollSound>
+		<scrollSound>./_art/assets/Move.wav</scrollSound>
+		<horizontalMargin>0.01</horizontalMargin>
+		<lineSpacing>2</lineSpacing>
+		<size>1 .8</size>
+	</textlist>	
+	</view>
+	
+	<view name="detailed, video">
+	<textlist name="gamelist">
+		<fontPath>${mainFont}</fontPath>
+		<scrollSound>./_art/assets/Move.wav</scrollSound>
 		<horizontalMargin>0.01</horizontalMargin>
 		<lineSpacing>2.3</lineSpacing>
+		<size>.49 .75</size>
 	</textlist>	
 		
 	<image name="logo">
@@ -63,9 +88,8 @@ based on:       Switch Theme for Launchbox by Grila
 		<pos>1 1</pos>
 	</image>
 		
-	<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_releasedate, md_description" extra="true">
+	<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description" extra="true">
 		<forceUppercase>0</forceUppercase>
-		<fontSize>0.028</fontSize>
 		<fontPath>${mainFont}</fontPath>
 	</text>
 		
@@ -74,196 +98,22 @@ based on:       Switch Theme for Launchbox by Grila
 	</text>
 	</view>
 	
-	<view name="detailed, video">	
-	<textlist name="gamelist">
-		<alignment>left</alignment>
-		<selectorImagePath>./assets/selector.png</selectorImagePath>
-		<selectorOffsetY>-0.008</selectorOffsetY>
-	</textlist>	
+	<view name="system, video, detailed, basic, grid">
+	<helpsystem name="help">
+		<origin>1 1</origin>
+    </helpsystem>
 	</view>
-	
-	<view name="basic">
-	<textlist name="gamelist">
-		<pos>0.04 0.182</pos>
-		<size>0.924 0.69</size>
-		<alignment>center</alignment>
-	</textlist>	
-	</view>
-
-	<!--System Options (When choosing system to select)-->
-    
-	<feature supported="carousel">
-  
-    <view name="system">
-    <carousel name="systemcarousel">
-        <type>horizontal</type>
-        <pos>0 0.3</pos> 
-        <size>1 .4</size> 
-        <color>00000000</color>
-        <logoScale>1</logoScale>
-        <logoSize>0.234 0.397</logoSize>
-       <maxLogoCount>3.5</maxLogoCount>
-    </carousel>
-
-    <text name="systemInfo">
-        <backgroundColor>dddddd00</backgroundColor>
-        <forceUppercase>0</forceUppercase>
-        <fontSize>0.03</fontSize>
-	    <pos>0.5 0.75</pos>
-	    <origin>0.5 0.5</origin>
-	    <forceUppercase>0</forceUppercase>
-	    <fontPath>./assets/Oxygen-Bold.ttf</fontPath>
-    </text>
-    </view>
-    </feature>
-
- 	<!--Video Options-->
-
-	<!--Gridview Options-->
-  	<view name="grid">
-	
-    <imagegrid name="gamegrid">
-		<margin>0.050 0.010</margin>
-        <pos>0.025 0.10</pos>
-        <size>0.950 0.84</size>
-	    <scrollDirection>horizontal</scrollDirection>
-		<autoLayout>3 1</autoLayout>
-		<autoLayoutSelectedZoom>1.00</autoLayoutSelectedZoom>
-		<centerSelection>true</centerSelection>
-		<scrollLoop>true</scrollLoop>
-		<scrollSound>./assets/Move.wav</scrollSound>
-    </imagegrid>
-	
-    <text name="gridtile">
-        <color>FFFFFF</color>
-        <backgroundColor>00000000</backgroundColor>
-        <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
-        <fontSize>0.030</fontSize>
-	    <alignment>center</alignment>
-        <glowColor>00000060</glowColor>
-        <glowSize>1</glowSize>
-	    <visible>false</visible>
-    </text>
-		
-	<text name="md_name">
-        <pos>0.034 0.05</pos>
-	    <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
-        <fontSize>0.030</fontSize>
-        <size>0.92 0.10</size>
-        <alignment>left</alignment>
-    </text>
-		
-	<image name="logo">
-	    <color>00000000</color>
-	    <path>./assets/box.png</path>
-		<pos>1 1</pos>
-	</image>
-
-    <gridtile name="default">
-        <backgroundColor>FFFFFF00</backgroundColor>
-        <backgroundCornerSize>9 9</backgroundCornerSize>
-        <selectionMode>image</selectionMode>
-        <padding>5 5</padding>
-    </gridtile>
-
-    </view>
 	
 	<view name="screen">
-      <text name="clock">
-	  <fontPath>./assets/Oxygen-Regular.ttf</fontPath>
-      <fontSize>0.035</fontSize>
-      <pos>0.85 0.07</pos>
-      <size>0.5 0.058</size>
+    <text name="clock">
+	  <fontPath>${mainFont}</fontPath>
+      <fontSize>0.04</fontSize>
+	  <color>${mainColor}</color>
+      <pos>0.835 .95</pos>
+      <size>0.4 0.039</size>
       <alignment>left</alignment>
       <verticalAlignment>center</verticalAlignment>
     </text>
     </view>
-	
-	<!-- Subset options for theme color. Links to variables -->
-	<subset name="ES Menu" displayName="${ESMenuSubsetName}">
-        <include name="header" displayName="${header}">./settings/esmenu/header.xml</include>
-		<include name="fullscreen" displayName="${fullscreen}">./settings/esmenu/fullscreen.xml</include>
-    </subset>
-		
-	<subset name="colorset" displayName="${subset.colorset}">
-        <include name="dark" displayName="${dark}">./settings/colors/dark.xml</include>
-        <include name="light" displayName="${light}">./settings/colors/light.xml</include>
-		<include name="black" displayName="${black}">./settings/colors/black.xml</include>
-		<include name="yellow" displayName="${yellow}">./settings/colors/yellow.xml</include>
-		<include name="rose pink" displayName="${rose pink}">./settings/colors/rosepink.xml</include>
-		<include name="pastel red" displayName="${pastel red}">./settings/colors/pastelred.xml</include>
-		<include name="teal" displayName="${teal}">./settings/colors/teal.xml</include>
-		<include name="mint green" displayName="${mint green}">./settings/colors/mintgreen.xml</include>
-		<include name="dark crystal" displayName="${dark crystal}">./settings/colors/darkcrystal.xml</include>
-		<include name="dark indigo crystal" displayName="${dark indigo crystal}">./settings/colors/darkindigocrystal.xml</include>
-		<include name="dark blue crystal" displayName="${dark blue crystal}">./settings/colors/darkbluecrystal.xml</include>
-		<include name="dark mint crystal" displayName="${dark mint crystal}">./settings/colors/darkmintcrystal.xml</include>
-		<include name="dark red crystal" displayName="${dark red crystal}">./settings/colors/darkredcrystal.xml</include>
-    </subset>
-
-    <!-- Subset options for help buttons. Links to variables -->
-	<subset name="logos" displayName="${logoSubsetName}">
-        <include name="normal" displayName="${normal}">./settings/logos/normallogos.xml</include>
-		<include name="cover art" displayName="${cover art}">./settings/logos/coverartlogos.xml</include>
-		<include name="generic" displayName="${generic}">./settings/logos/genericlogos.xml</include>
-    </subset>
-	
-	<!-- Subset options for grid views. Links to variables -->
-	<subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="grid">
-        <include name="no" displayName="${no}"/>
-        <include name="normal" displayName="${normal}">./settings/gridview/blinkcolors/normal.xml</include>
-		<include name="dark" displayName="${dark}">./settings/gridview/blinkcolors/dark.xml</include>
-		<include name="white" displayName="${white}">./settings/gridview/blinkcolors/white.xml</include>
-		<include name="black" displayName="${black}">./settings/gridview/blinkcolors/black.xml</include>
-		<include name="red" displayName="${red}">./settings/gridview/blinkcolors/red.xml</include>
-		<include name="blue" displayName="${blue}">./settings/gridview/blinkcolors/blue.xml</include>
-		<include name="yellow" displayName="${yellow}">./settings/gridview/blinkcolors/yellow.xml</include>
-    </subset>
-  
-    <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="grid">
-        <include name="off" displayName="${off}"/>
-        <include name="video in box" displayName="${box}">./settings/gridview/gridvideos.xml</include>
-		<include name="video in background" displayName="${video back}">./settings/gridview/backgroundgridvideos.xml</include>
-		<include name="video fade in" displayName="${fade in video}">./settings/gridview/fadegridvideos.xml</include>
-    </subset>
-	
-	<!-- Subset options for various system views and fonts. Links to variables -->
-	<subset name="hidesystemnameSubsetName" displayName="${hidesystemnameSubsetName}">
-        <include name="Normal" displayName="${one}">./settings/systemname/systemname.xml</include>
-		<include name="Left Alignment" displayName="${two}">./settings/systemname/systemnametwo.xml</include>
-        <include name="off" displayName="${off}"/>
-    </subset>
-	
-    <subset name="gamelistview" displayName="${gamelistviewSubsetName}" appliesTo="detailed, video">
-        <include name="Normal" displayName="${one}">./settings/gamelist/gamelistview1.xml</include>
-        <include name="Left Alignment" displayName="${two}">./settings/gamelist/gamelistview2.xml</include>
-    </subset>
-
-    <subset name="uppercasesystem" displayName="${uppercaseSubsetName}">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/systemname/systemnameuppercase.xml</include>
-    </subset>
-	
-	<subset name="uppercasegamelist" displayName="${uppercasegamelistSubsetName}" appliesTo="detailed, video, basic">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/gamelist/gamelistup.xml</include>
-    </subset>
-	
-    <subset name="description" displayName="${descriptionSubsetName}" appliesTo="detailed, video">
-        <include name="yes" displayName="${yes}">./settings/descriptions/descriptionon.xml</include>
-        <include name="no" displayName="${no}">./settings/descriptions/descriptionoff.xml</include>
-    </subset>
-	
-    <subset name="topandbottomline" displayName="${topandbottomlineSubsetName}">
-        <include name="no" displayName="${no}"/>
-        <include name="yes" displayName="${yes}">./settings/topandbottomline.xml</include>
-    </subset>
-
-    <!-- Subset options for help buttons. Links to variables -->
-	<subset name="help" displayName="${helpSubsetName}">
-        <include name="no" displayName="${off}"/>
-        <include name="xb buttons" displayName="${xb buttons}">./settings/helpbuttons.xml</include>
-		<include name="ps buttons" displayName="${ps buttons}">./settings/helpbuttonsps.xml</include>
-    </subset>
   
 </theme>
