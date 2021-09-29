@@ -60,8 +60,12 @@
 	
 	<view name="basic, detailed, video, grid">
 		<text name="system_name_1" extra="true">
-			<color>${secondaryColor}</color>
-		</text>	
+			<color>${mainColor}</color>
+		</text>
+		
+		<image name="arrowblock" extra="true">
+			<color>${mainColor}</color>
+		</image>
 	</view>
 	
 	<view name="basic">

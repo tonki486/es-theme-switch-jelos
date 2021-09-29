@@ -33,7 +33,7 @@
 	<text name="system_name_1" extra="true">
 		<text>${system.fullName}</text>
 		<size>0.743 0.015</size>
-		<pos>0.05 0.20</pos>
+		<pos>0.05 0.08</pos>
 		<origin>0 0</origin>
 		<fontSize>0.04</fontSize>
 		<alignment>left</alignment>
@@ -41,11 +41,11 @@
 	</text>
 		
 	<image name="arrowblock" extra="true">
-		<pos>0.01 0.18</pos>
+		<pos>0.01 0.06</pos>
 		<path>./../_art/assets/arrow_block.svg</path>
 		<size>0.023 0.047</size>
 		<origin>0 0</origin>
-	</image>	
+	</image>
 	</view>
   
 </theme>

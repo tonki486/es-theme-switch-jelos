@@ -42,7 +42,7 @@
 
     <gridtile name="default">
         <backgroundColor>FFFFFF00</backgroundColor>
-        <backgroundCornerSize>9 9</backgroundCornerSize>
+        <backgroundCornerSize>0 0</backgroundCornerSize>
         <selectionMode>image</selectionMode>
         <padding>5 5</padding>
     </gridtile>
