@@ -1,7 +1,7 @@
 <!--
 Fork by:        Jetup13
 theme name:		Switch
-version:		4.1
+version:		4.2
 OG author:		Lilbud
 email:			bvw20002010@gmail.com
 license:		creative commons CC-BY-NC-SA
@@ -16,49 +16,53 @@ based on:       Switch Theme for Launchbox by Grila
 	<include>./_art/gamelistview/basicview.xml</include>
 	<include>./_art/gamelistview/gridview.xml</include>
 	<variables>
-	   <mainFont>./_art/Acre.otf</mainFont>
-	   <subset.colorset>Theme Color</subset.colorset>
-	   <systemview>System Icon Style</systemview>
-	   <gamelistview>Detailed Gamelist View Style</gamelistview>
-	   <tabb>Show Top and Bottom Bar</tabb>
-	   <forceupper>Force Uppercase</forceupper>
+		<mainFont>./_art/Acre.otf</mainFont>
+		<subset.colorset>Theme Color</subset.colorset>
+		<systemview>System Icon Style</systemview>
+		<gamelistview>Detailed Gamelist View Style</gamelistview>
+		<tabb>Show Top and Bottom Bar</tabb>
+		<forceupper>Force Uppercase</forceupper>
 	</variables>
 	
 	<subset name="colorset" displayName="${subset.colorset}">
-       <include name="dark">./_art/colors/dark.xml</include>
-	   <include name="teal">./_art/colors/teal.xml</include>
-	   <include name="royal blue">./_art/colors/royalblue.xml</include>
-	   <include name="mint green">./_art/colors/mintgreen.xml</include>
-	   <include name="pastel red">./_art/colors/pastelred.xml</include>
-	   <include name="pastel pink">./_art/colors/pastelpink.xml</include>
-	   <include name="orange">./_art/colors/orange.xml</include>
-	   <include name="yellow">./_art/colors/yellow.xml</include>
-	   <include name="violet">./_art/colors/violet.xml</include>
-	   <include name="light">./_art/colors/light.xml</include>
-    </subset>
+		<include name="dark">./_art/colors/dark.xml</include>
+		<include name="royal blue">./_art/colors/royalblue.xml</include>
+		<include name="electric blue">./_art/colors/electricblue.xml</include>
+		<include name="pastel blue">./_art/colors/pastelblue.xml</include>
+		<include name="mint green">./_art/colors/mintgreen.xml</include>
+		<include name="apple green">./_art/colors/applegreen.xml</include>
+		<include name="cardinal red">./_art/colors/cardinalred.xml</include>
+		<include name="pastel red">./_art/colors/pastelred.xml</include>
+		<include name="fuchsia pink">./_art/colors/fuchsiapink.xml</include>
+		<include name="pastel pink">./_art/colors/pastelpink.xml</include>
+		<include name="orange">./_art/colors/orange.xml</include>
+		<include name="yellow">./_art/colors/yellow.xml</include>
+		<include name="violet">./_art/colors/violet.xml</include>
+		<include name="light">./_art/colors/light.xml</include>
+	</subset>
 	
 	<subset name="systemview" displayName="${systemview}">
-       <include name="default">./_art/systemview/default.xml</include>
-       <include name="large">./_art/systemview/large.xml</include>
-    </subset>
+		<include name="default">./_art/systemview/default.xml</include>
+		<include name="large">./_art/systemview/large.xml</include>
+	</subset>
 	
 	<subset name="gamelistview" displayName="${gamelistview}">
-       <include name="No Metadata">./_art/gamelistview/nometa.xml</include>
-       <include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
-	   <include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
-    </subset>
+		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
+		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
+		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
+	</subset>
 	
 	<subset name="Top and Bottom Bar" displayName="${tabb}">
-	   <include name="yes">./_art/xml/topandbottomline.xml</include>
-       <include name="no"/>
-    </subset>
+		<include name="yes">./_art/xml/topandbottomline.xml</include>
+		<include name="no"/>
+	</subset>
 	
 	<subset name="Force Uppercase" displayName="${forceupper}">
-	   <include name="no"/>
-	   <include name="Gamelist">./_art/xml/forceuppercasegamelist.xml</include>
-	   <include name="System Name">./_art/xml/forceuppercasesystemname.xml</include>
-	   <include name="System Name and Gamelist">./_art/xml/forceuppercaseall.xml</include>
-    </subset>
+		<include name="no"/>
+		<include name="Gamelist">./_art/xml/forceuppercasegamelist.xml</include>
+		<include name="System Name">./_art/xml/forceuppercasesystemname.xml</include>
+		<include name="System Name and Gamelist">./_art/xml/forceuppercaseall.xml</include>
+	</subset>
 	
 	<view name="system, basic, detailed, video, grid">
 	<image name="background" extra="true">
@@ -104,19 +108,19 @@ based on:       Switch Theme for Launchbox by Grila
 	<view name="system, video, detailed, basic, grid">
 	<helpsystem name="help">
 		<origin>1 1</origin>
-    </helpsystem>
+	</helpsystem>
 	</view>
 	
 	<view name="screen">
-    <text name="clock">
-	  <fontPath>${mainFont}</fontPath>
-      <fontSize>0.04</fontSize>
-	  <color>${mainColor}</color>
-      <pos>0.835 .95</pos>
-      <size>0.4 0.039</size>
-      <alignment>left</alignment>
-      <verticalAlignment>center</verticalAlignment>
-    </text>
-    </view>
+	<text name="clock">
+		<fontPath>${mainFont}</fontPath>
+		<fontSize>0.04</fontSize>
+		<color>${mainColor}</color>
+		<pos>0.835 .95</pos>
+		<size>0.4 0.039</size>
+		<alignment>left</alignment>
+		<verticalAlignment>center</verticalAlignment>
+	</text>
+	</view>
   
 </theme>

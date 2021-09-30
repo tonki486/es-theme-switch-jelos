@@ -5,7 +5,7 @@
 	<variables>
 	    <mainFont>./../_art/Acre.otf</mainFont>
 		<backgroundColor>2d2d2d</backgroundColor>
-		<mainColor>f4dc26</mainColor>
+		<mainColor>ff77ff</mainColor>
 		<secondaryColor>fefefe</secondaryColor>
 	</variables>
 	

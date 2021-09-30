@@ -4,32 +4,32 @@
 	<variables>
 		<mainFont>./../_art/Acre.otf</mainFont>
 	</variables>
-    
+  
 	<feature supported="carousel">
-    <view name="system">
-    <carousel name="systemcarousel">
-        <type>horizontal</type>
-        <pos>0 0</pos> 
-        <size>1 1</size> 
-        <color>00000000</color>
-        <logoScale>1</logoScale>
-        <logoSize>1 0.65</logoSize>
-        <maxLogoCount>1.5</maxLogoCount>
-    </carousel>
+	<view name="system">
+	<carousel name="systemcarousel">
+		<type>horizontal</type>
+		<pos>0 0</pos> 
+		<size>1 1</size> 
+		<color>00000000</color>
+		<logoScale>1</logoScale>
+		<logoSize>1 0.65</logoSize>
+		<maxLogoCount>1.5</maxLogoCount>
+	</carousel>
 
-    <text name="systemInfo">
-        <backgroundColor>dddddd00</backgroundColor>
-        <forceUppercase>0</forceUppercase>
-        <fontSize>0.04</fontSize>
-	    <pos>0.5 0.87</pos>
-	    <origin>0.5 0.5</origin>
-	    <forceUppercase>0</forceUppercase>
-	    <fontPath>${mainFont}</fontPath>
-    </text>
-    </view>
-    </feature>
+	<text name="systemInfo">
+		<backgroundColor>dddddd00</backgroundColor>
+		<forceUppercase>0</forceUppercase>
+		<fontSize>0.04</fontSize>
+		<pos>0.5 0.87</pos>
+		<origin>0.5 0.5</origin>
+		<forceUppercase>0</forceUppercase>
+		<fontPath>${mainFont}</fontPath>
+	</text>
+	</view>
+	</feature>
 
-  	<view name="system">
+	<view name="system">
 	<text name="system_name_1" extra="true">
 		<text>${system.fullName}</text>
 		<size>0.743 0.015</size>
@@ -37,9 +37,9 @@
 		<origin>0 0</origin>
 		<fontSize>0.04</fontSize>
 		<alignment>left</alignment>
-	    <fontPath>${mainFont}</fontPath>
+		<fontPath>${mainFont}</fontPath>
 	</text>
-		
+
 	<image name="arrowblock" extra="true">
 		<pos>0.01 0.06</pos>
 		<path>./../_art/assets/arrow_block.svg</path>
@@ -47,5 +47,4 @@
 		<origin>0 0</origin>
 	</image>	
 	</view>
-  
 </theme>
