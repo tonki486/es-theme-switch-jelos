@@ -24,7 +24,7 @@
 	</video>
 
 	<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_releasedate" extra="true">
-		<fontSize>0.04</fontSize>
+		<fontSize>0.038</fontSize>
 	</text>
 
 	<text name="md_lbl_players">
