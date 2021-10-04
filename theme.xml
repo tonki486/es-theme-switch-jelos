@@ -39,6 +39,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="yellow">./_art/colors/yellow.xml</include>
 		<include name="violet">./_art/colors/violet.xml</include>
 		<include name="light">./_art/colors/light.xml</include>
+		<include name="black">./_art/colors/black.xml</include>
 	</subset>
 	
 	<subset name="systemview" displayName="${systemview}">

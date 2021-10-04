@@ -4,10 +4,9 @@
     	<!-- Color Variables -->
 	<variables>
 	    <mainFont>./../_art/Acre.otf</mainFont>
-		<backgroundColor>2d2d2d</backgroundColor>
-		<mainColor>ffffff</mainColor>
+		<backgroundColor>000000</backgroundColor>
+		<mainColor>15c49e</mainColor>
 		<secondaryColor>fefefe</secondaryColor>
-		<selectedColor>15c49e</selectedColor>
 	</variables>
 	
 	<view name="system">
@@ -36,7 +35,7 @@
 	
 	<view name="detailed, video, grid">
 	<textlist name="gamelist">
-		<selectedColor>${selectedColor}</selectedColor>
+		<selectedColor>${mainColor}</selectedColor>
 		<primaryColor>${secondaryColor}</primaryColor>
 		<secondaryColor>${secondaryColor}</secondaryColor>
 		<selectorColor>${mainColor}00</selectorColor>
@@ -71,7 +70,7 @@
 	
 	<view name="basic">
 		<textlist name="gamelist">
-		<selectedColor>${selectedColor}</selectedColor>
+		<selectedColor>${mainColor}</selectedColor>
 		<primaryColor>${secondaryColor}</primaryColor>
 		<secondaryColor>${secondaryColor}</secondaryColor>
 		<selectorColor>00000000</selectorColor>
