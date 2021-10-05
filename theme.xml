@@ -38,9 +38,9 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="orange">./_art/colors/orange.xml</include>
 		<include name="yellow">./_art/colors/yellow.xml</include>
 		<include name="violet">./_art/colors/violet.xml</include>
-		<include name="dark cystal">./_art/colors/darkcrystal.xml</include>
-		<include name="violet cystal">./_art/colors/violetcrystal.xml</include>
-		<include name="teal cystal">./_art/colors/tealcrystal.xml</include>
+		<include name="dark crystal">./_art/colors/darkcrystal.xml</include>
+		<include name="violet crystal">./_art/colors/violetcrystal.xml</include>
+		<include name="teal crystal">./_art/colors/tealcrystal.xml</include>
 		<include name="dark matte">./_art/colors/darkmatte.xml</include>
 		<include name="light">./_art/colors/light.xml</include>
 		<include name="black">./_art/colors/black.xml</include>
