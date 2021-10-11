@@ -8,7 +8,6 @@
 	<feature supported="carousel">
 	<view name="system">
 	<carousel name="systemcarousel">
-      <defaultTransition>slide</defaultTransition>
 		<type>horizontal</type>
 		<pos>0 0</pos> 
 		<size>1 1</size> 
