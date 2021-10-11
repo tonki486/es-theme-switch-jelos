@@ -11,8 +11,6 @@
 		<autoLayoutSelectedZoom>1.0</autoLayoutSelectedZoom>
 		<animateSelection>false</animateSelection>
 		<scrollDirection>horizontal</scrollDirection>
-		<centerSelection>true</centerSelection>
-		<scrollLoop>true</scrollLoop>
 		<zIndex>6</zIndex>
 		<scrollSound>./../_art/assets/Move.wav</scrollSound>
 	</imagegrid>
@@ -25,10 +23,6 @@
 		<alignment>center</alignment>
 		<visible>false</visible>
 	</text>
-
-	<ninepatch name="gridtile.background:selected">
-		<color>202020</color>
-	</ninepatch>
 		
 	<text name="md_name">
 		<size>0.95 0.015</size>
@@ -50,7 +44,7 @@
 		<backgroundColor>FFFFFF00</backgroundColor>
 		<backgroundCornerSize>0 0</backgroundCornerSize>
 		<selectionMode>image</selectionMode>
-		<padding>5 5</padding>
+		<padding>2 2</padding>
 	</gridtile>
 	
 	<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">

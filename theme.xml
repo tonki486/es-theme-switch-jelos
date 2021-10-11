@@ -1,7 +1,7 @@
 <!--
 Fork by:        Jetup13
 theme name:		Switch
-version:		4.31
+version:		4.4
 OG author:		Lilbud
 email:			bvw20002010@gmail.com
 license:		creative commons CC-BY-NC-SA
@@ -20,6 +20,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<subset.colorset>Theme Color</subset.colorset>
 		<systemview>System Icon Style</systemview>
 		<gamelistview>Detailed Gamelist View Style</gamelistview>
+		<gridselection>Gridview Selection</gridselection>
 		<tabb>Show Top and Bottom Bar</tabb>
 		<forceupper>Force Uppercase</forceupper>
 	</variables>
@@ -55,6 +56,13 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
 		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
 		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
+	</subset>
+
+	<subset name="Grid Selection" displayName="${gridselection}">
+		<include name="Default">./_art/xml/gridcenterselectionwithloop.xml</include>
+		<include name="Centered wo/Loop">./_art/xml/gridcenterselection.xml</include>
+		<include name="Uncentered w/Loop">./_art/xml/gridloop.xml</include>
+		<include name="Uncentered wo/Loop">./_art/xml/gridnoloop.xml</include>
 	</subset>
 	
 	<subset name="Top and Bottom Bar" displayName="${tabb}">
@@ -112,7 +120,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	<view name="system, video, detailed, basic, grid">
 	<helpsystem name="help">
-		<origin>1 1</origin>
+		<origin>-9 1</origin>
 	</helpsystem>
 	</view>
 	
@@ -121,7 +129,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<fontPath>${mainFont}</fontPath>
 		<fontSize>0.04</fontSize>
 		<color>${mainColor}</color>
-		<pos>0.86 .945</pos>
+		<pos>0.865 .945</pos>
 		<size>0.4 0.039</size>
 		<alignment>left</alignment>
 		<verticalAlignment>center</verticalAlignment>
