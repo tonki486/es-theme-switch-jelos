@@ -49,7 +49,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	<subset name="systemview" displayName="${systemview}">
 		<include name="default">./_art/systemview/default.xml</include>
-		<include name="large">./_art/systemview/large.xml</include>
+		<include name="small">./_art/systemview/small.xml</include>
 	</subset>
 	
 	<subset name="gamelistview" displayName="${gamelistview}">
@@ -134,6 +134,9 @@ based on:       Switch Theme for Launchbox by Grila
 		<alignment>left</alignment>
 		<verticalAlignment>center</verticalAlignment>
 	</text>
+	<batteryIndicator name="batteryIndicator">
+		<color>${mainColor}</color>
+	</batteryIndicator>
 	</view>
   
 </theme>

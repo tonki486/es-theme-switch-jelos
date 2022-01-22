@@ -4,24 +4,24 @@
 	<variables>
 		<mainFont>./../_art/Acre.otf</mainFont>
 	</variables>
-  
+    
 	<feature supported="carousel">
 	<view name="system">
 	<carousel name="systemcarousel">
 		<type>horizontal</type>
-		<pos>0 0</pos> 
-		<size>1 1</size> 
+		<pos>0 0.3</pos> 
+		<size>1 .4</size> 
 		<color>00000000</color>
 		<logoScale>1</logoScale>
-		<logoSize>1 0.65</logoSize>
-		<maxLogoCount>1.5</maxLogoCount>
+		<logoSize>0.234 0.397</logoSize>
+		<maxLogoCount>3.5</maxLogoCount>
 	</carousel>
 
 	<text name="systemInfo">
 		<backgroundColor>dddddd00</backgroundColor>
 		<forceUppercase>0</forceUppercase>
 		<fontSize>0.04</fontSize>
-		<pos>0.5 0.87</pos>
+		<pos>0.5 0.75</pos>
 		<origin>0.5 0.5</origin>
 		<forceUppercase>0</forceUppercase>
 		<fontPath>${mainFont}</fontPath>
@@ -45,6 +45,6 @@
 		<path>./../_art/assets/arrow_block.svg</path>
 		<size>0.023 0.047</size>
 		<origin>0 0</origin>
-	</image>	
+	</image>
 	</view>
 </theme>
