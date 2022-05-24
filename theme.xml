@@ -71,10 +71,10 @@ based on:       Switch Theme for Launchbox by Grila
 	</subset>
 	
 	<subset name="Force Uppercase" displayName="${forceupper}">
-		<include name="no"/>
-		<include name="Gamelist">./_art/xml/forceuppercasegamelist.xml</include>
-		<include name="System Name">./_art/xml/forceuppercasesystemname.xml</include>
 		<include name="System Name and Gamelist">./_art/xml/forceuppercaseall.xml</include>
+		<include name="System Name Only">./_art/xml/forceuppercasesystemname.xml</include>
+		<include name="Gamelist Only">./_art/xml/forceuppercasegamelist.xml</include>
+		<include name="no"/>
 	</subset>
 	
 	<view name="system, basic, detailed, video, grid">
