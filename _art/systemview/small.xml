@@ -32,18 +32,18 @@
 	<view name="system">
 	<text name="system_name_1" extra="true">
 		<text>${system.fullName}</text>
-		<size>0.743 0.015</size>
+		<size>0.95 0.015</size>
 		<pos>0.05 0.08</pos>
 		<origin>0 0</origin>
-		<fontSize>0.045</fontSize>
+		<fontSize>0.058</fontSize>
 		<alignment>left</alignment>
 		<fontPath>${mainFont}</fontPath>
 	</text>
 
 	<image name="arrowblock" extra="true">
-		<pos>0.01 0.06</pos>
+		<pos>0.01 0.055</pos>
 		<path>./../_art/assets/arrow_block.svg</path>
-		<size>0.023 0.047</size>
+		<size>0.028 0.06</size>
 		<origin>0 0</origin>
 	</image>
 	</view>
