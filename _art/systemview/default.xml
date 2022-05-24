@@ -35,7 +35,7 @@
 		<size>0.743 0.015</size>
 		<pos>0.05 0.08</pos>
 		<origin>0 0</origin>
-		<fontSize>0.04</fontSize>
+		<fontSize>0.05</fontSize>
 		<alignment>left</alignment>
 		<fontPath>${mainFont}</fontPath>
 	</text>
