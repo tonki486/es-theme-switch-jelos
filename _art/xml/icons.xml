@@ -1,0 +1,24 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	<view name="menu">
+    <menuIcons name="menuicons">
+		<iconBrightnessctl>./../_art/assets/icons/brightness.png</iconBrightnessctl>
+		<iconKodi>./../_art/assets/icons/Kodi.png</iconKodi>
+		<iconSystem>./../_art/assets/icons/settings.png</iconSystem>
+		<iconUpdates>./../_art/assets/icons/update.png</iconUpdates>
+		<iconGames>./../_art/assets/icons/games.png</iconGames>
+		<iconControllers>./../_art/assets/icons/controller.png</iconControllers>
+		<iconUI>./../_art/assets/icons/ui.png</iconUI>
+		<iconSound>./../_art/assets/icons/sound.png</iconSound>
+		<iconNetwork>./../_art/assets/icons/wifi.png</iconNetwork>
+		<iconScraper>./../_art/assets/icons/scraper.png</iconScraper>
+		<iconAdvanced>./../_art/assets/icons/advanced.png</iconAdvanced>
+		<iconQuit>./../_art/assets/icons/quit.png</iconQuit>
+		<iconRestart>./../_art/assets/icons/restart.png</iconRestart>
+		<iconShutdown>./../_art/assets/icons/shutdown.png</iconShutdown>
+		<iconFastShutdown>./../_art/assets/icons/fastshutdown.png</iconFastShutdown>
+		<iconRetroachievements>./../_art/assets/icons/contest.png</iconRetroachievements>
+		<iconManual>./../_art/assets/icons/nanual.png</iconManual>
+	</menuIcons>
+	</view>
+</theme>

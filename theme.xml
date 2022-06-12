@@ -13,6 +13,7 @@ based on:       Switch Theme for Launchbox by Grila
 	
 	<include>./_art/xml/artworklogos.xml</include>
 	<include>./_art/xml/hidden.xml</include>
+	<include>./_art/xml/icons.xml</include>
 	<include>./_art/gamelistview/basicview.xml</include>
 	<include>./_art/gamelistview/gridview.xml</include>
 	<variables>
