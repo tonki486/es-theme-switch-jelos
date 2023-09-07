@@ -51,6 +51,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<subset name="systemview" displayName="${systemview}">
 		<include name="default">./_art/systemview/default.xml</include>
 		<include name="small">./_art/systemview/small.xml</include>
+		<include name="rgb30">./_art/systemview/rgb30.xml</include>
 	</subset>
 	
 	<subset name="gamelistview" displayName="${gamelistview}">
