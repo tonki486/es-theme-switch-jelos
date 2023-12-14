@@ -58,7 +58,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
 		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
 		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
-		<include name="RGB30 w/ Metadata">./_art/gamelistview/withmeta_rgb30.xml</include>
+		<include name="w/ Metadata (RGB30)">./_art/gamelistview/withmeta_rgb30.xml</include>
 	</subset>
 
 	<subset name="Grid Selection" displayName="${gridselection}">
@@ -120,16 +120,13 @@ based on:       Switch Theme for Launchbox by Grila
 			<pos>1 1</pos>
 		</text>
 
-		<datetime name="md_releasedate">
-			<forceUppercase>0</forceUppercase>
+		<datetime name="md_releasedate, md_lastplayed">
 			<fontPath>${mainFont}</fontPath>
-			<format>%Y</format>
-			<color>${mainColor}</color>
+			<color>${secondaryColor}</color>
 		</datetime>
-		
-		<datetime name="md_lastplayed">
-			<fontPath>${mainFont}</fontPath>
-			<color>${mainColor}</color>
+
+		<datetime name="md_releasedate">
+			<format>%Y</format>
 		</datetime>
 	</view>
 	
@@ -154,9 +151,9 @@ based on:       Switch Theme for Launchbox by Grila
 			<color>${backgroundColor}</color>
 		</image>
 
-		<image name="topline, bottomline" extra="true">
+		<!-- <image name="topline, bottomline" extra="true">
 			<color>${secondaryColor}</color>
-		</image>
+		</image> -->
 			
 		<image name="gamelistbuttons, systembuttons" extra="true">
 			<color>${secondaryColor}</color>
@@ -177,7 +174,7 @@ based on:       Switch Theme for Launchbox by Grila
 		</rating>
 			
 		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description">
-			<color>${mainColor}</color>
+			<color>${secondaryColor}</color>
 		</text>
 	</view>
 	
