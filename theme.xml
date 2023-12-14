@@ -58,6 +58,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
 		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
 		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
+		<include name="RGB30 w/ Metadata">./_art/gamelistview/withmeta_rgb30.xml</include>
 	</subset>
 
 	<subset name="Grid Selection" displayName="${gridselection}">
