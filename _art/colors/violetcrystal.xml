@@ -9,4 +9,14 @@
 		<secondaryColor>fefefe</secondaryColor>
 		<selectedColor>7954A1</selectedColor>
 	</variables>
+
+	<view name="system, basic, detailed, video, grid">
+		<image name="backgroundextra" extra="true">
+			<path>./../_art/wallpapers/violetcrystal.png</path>
+			<zIndex>-99</zIndex>
+			<tile>false</tile>
+			<size>1 1</size>
+		</image>
+	</view>
+
 </theme>

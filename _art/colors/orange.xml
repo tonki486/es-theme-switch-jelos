@@ -7,5 +7,6 @@
 		<backgroundColor>2d2d2d</backgroundColor>
 		<mainColor>FFA500</mainColor>
 		<secondaryColor>fefefe</secondaryColor>
+		<selectedColor>FFA500</selectedColor>
 	</variables>
 </theme>

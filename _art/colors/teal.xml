@@ -7,5 +7,6 @@
 		<backgroundColor>2d2d2d</backgroundColor>
 		<mainColor>008080</mainColor>
 		<secondaryColor>fefefe</secondaryColor>
+		<selectedColor>008080</selectedColor>
 	</variables>
 </theme>
