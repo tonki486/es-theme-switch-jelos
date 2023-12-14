@@ -81,6 +81,10 @@
 		<fontPath>${mainFont}</fontPath>
 	</text>
 
+	<text name="md_lbl_lastplayed">
+		<pos>1 1</pos>
+	</text>
+
 	<image name="arrowblock" extra="true">
 		<pos>0.01 0.06</pos>
 		<path>./../_art/assets/arrow_block.png</path>
