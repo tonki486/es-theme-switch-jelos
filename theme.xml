@@ -128,7 +128,7 @@ based on:   Switch Theme for Launchbox by Grila
 			<format>%Y</format>
 		</datetime>
 
-		<image name="md_releasedate_icon,md_players_icon,md_developer_icon,md_publisher_icon,md_genre_icon,md_lastplayed_icon,md_playcount_icon,md_gametime_icon" extra="true">
+		<image name="md_releasedate_icon, md_players_icon, md_developer_icon, md_publisher_icon, md_genre_icon, md_lastplayed_icon, md_playcount_icon, md_gametime_icon" extra="true">
 			<origin>0 0.5</origin>
 			<pos>1 1</pos>
 			<color>${secondaryColor}</color>
@@ -180,10 +180,6 @@ based on:   Switch Theme for Launchbox by Grila
 			<color>${backgroundColor}</color>
 		</image>
 
-		<!-- <image name="topline, bottomline" extra="true">
-			<color>${secondaryColor}</color>
-		</image> -->
-
 		<image name="gamelistbuttons, systembuttons" extra="true">
 			<color>${secondaryColor}</color>
 		</image>
@@ -202,7 +198,7 @@ based on:   Switch Theme for Launchbox by Grila
 			<unfilledPath>./_art/assets/icon-star-unfilled.svg</unfilledPath>
 		</rating>
 
-		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description, md_lbl_gametime, md_gametime">
+		<text name="md_developer, md_genre, md_players, md_playcount, md_description, md_gametime">
 			<color>${secondaryColor}</color>
 		</text>
 	</view>
@@ -241,10 +237,14 @@ based on:   Switch Theme for Launchbox by Grila
 		</menuBackground>
 
 		<menuText name="menutext, menutitle">
+			<fontSize>.038</fontSize>
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>.040</fontSize>
 			<color>${secondaryColor}</color>
 			<separatorColor>${mainColor}</separatorColor>
+		</menuText>
+
+		<menuText name="menutitle">
+			<fontSize>.041</fontSize>
 		</menuText>
 
 		<menuText name="menufooter, menutextsmall">
@@ -260,7 +260,7 @@ based on:   Switch Theme for Launchbox by Grila
 
 		<menuGroup name="menugroup">
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>.038</fontSize>
+			<fontSize>.041</fontSize>
 			<color>${mainColor}</color>
 			<separatorColor>${separatorColor}</separatorColor>
 			<selectedColor>${selectedColor}</selectedColor>
@@ -286,15 +286,6 @@ based on:   Switch Theme for Launchbox by Grila
 		</menuIcons>
 	</view>
 
-	<!-- <feature supported="carousel">
-		<view name="system">
-			<text name="systemInfo">
-				<color>${mainColor}</color>
-				<defaultTransition>instant</defaultTransition>
-			</text>
-		</view>
-	</feature> -->
-
 	<view name="system">
 		<carousel name="systemcarousel">
 			<defaultTransition>instant</defaultTransition>
@@ -318,6 +309,7 @@ based on:   Switch Theme for Launchbox by Grila
 			<alignment>left</alignment>
 			<verticalAlignment>center</verticalAlignment>
 		</text>
+		
 		<batteryIndicator name="batteryIndicator">
 			<pos>-0.03 0.01</pos>
 			<size>0.978125 0.05</size>
