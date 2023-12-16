@@ -58,7 +58,6 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
 		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
 		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
-		<include name="w/ Metadata (RGB30)">./_art/gamelistview/withmeta_rgb30.xml</include>
 	</subset>
 
 	<subset name="Grid Selection" displayName="${gridselection}">
@@ -232,21 +231,21 @@ based on:       Switch Theme for Launchbox by Grila
 			<active>./../_art/assets/textinput_active.png</active>
 		</menuTextEdit>
 		<menuIcons name="menuicons">
-         <iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
-         <iconUpdates>./_inc/images/menu-icon-update.svg</iconUpdates>
-         <iconControllers>./_inc/images/menu-icon-controller.svg</iconControllers>
-         <iconGames>./_inc/images/menu-icon-games.svg</iconGames>
-         <iconUI>./_inc/images/menu-icon-ui.svg</iconUI>
-         <iconSound>./_inc/images/menu-icon-sound.svg</iconSound>
-         <iconNetwork>./_inc/images/menu-icon-network.svg</iconNetwork>
-         <iconScraper>./_inc/images/menu-icon-scraper.svg</iconScraper>
-         <iconAdvanced>./_inc/images/menu-icon-advanced.svg</iconAdvanced>
-         <iconQuit>./_inc/images/menu-icon-quit.svg</iconQuit>
-         <iconRetroachievements>./_inc/images/menu-icon-achievements.svg</iconRetroachievements>
-         <iconKodi>./_inc/images/menu-icon-kodi.svg</iconKodi>
-         <iconRestart>./_inc/images/menu-icon-restart.svg</iconRestart>
-         <iconShutdown>./_inc/images/menu-icon-shutdown.svg</iconShutdown>
-         <iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
+         <iconSystem>./_art/assets/menu-icon-system.svg</iconSystem>
+         <iconUpdates>./_art/assets/menu-icon-update.svg</iconUpdates>
+         <iconControllers>./_art/assets/menu-icon-controller.svg</iconControllers>
+         <iconGames>./_art/assets/menu-icon-games.svg</iconGames>
+         <iconUI>./_art/assets/menu-icon-ui.svg</iconUI>
+         <iconSound>./_art/assets/menu-icon-sound.svg</iconSound>
+         <iconNetwork>./_art/assets/menu-icon-network.svg</iconNetwork>
+         <iconScraper>./_art/assets/menu-icon-scraper.svg</iconScraper>
+         <iconAdvanced>./_art/assets/menu-icon-advanced.svg</iconAdvanced>
+         <iconQuit>./_art/assets/menu-icon-quit.svg</iconQuit>
+         <iconRetroachievements>./_art/assets/menu-icon-achievements.svg</iconRetroachievements>
+         <iconKodi>./_art/assets/menu-icon-kodi.svg</iconKodi>
+         <iconRestart>./_art/assets/menu-icon-restart.svg</iconRestart>
+         <iconShutdown>./_art/assets/menu-icon-shutdown.svg</iconShutdown>
+         <iconFastShutdown>./_art/assets/menu-icon-shutdown.svg</iconFastShutdown>
       </menuIcons>
 	</view>
 
@@ -291,13 +290,13 @@ based on:       Switch Theme for Launchbox by Grila
          <size>0.978125 0.05</size>
          <color>${mainColor}</color>
          <itemSpacing>0</itemSpacing>
-         <full>./_inc/images/battery-100-vertical.svg</full>
-         <at75>./_inc/images/battery-75-vertical.svg</at75>
-         <at50>./_inc/images/battery-50-vertical.svg</at50>
-         <at25>./_inc/images/battery-25-vertical.svg</at25>
-         <empty>./_inc/images/battery-0-vertical.svg</empty>
-         <incharge>./_inc/images/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_inc/images/wifi-vertical.svg</networkIcon>
+         <full>./_art/assets/battery-100-vertical.svg</full>
+         <at75>./_art/assets/battery-75-vertical.svg</at75>
+         <at50>./_art/assets/battery-50-vertical.svg</at50>
+         <at25>./_art/assets/battery-25-vertical.svg</at25>
+         <empty>./_art/assets/battery-0-vertical.svg</empty>
+         <incharge>./_art/assets/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_art/assets/wifi-vertical.svg</networkIcon>
       </batteryIndicator>
 	</view>
 </theme>
