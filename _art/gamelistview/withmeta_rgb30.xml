@@ -56,12 +56,12 @@
 			<size>0.345833333333333 0.025</size>
 		</text>
 
-		<text name="md_lbl_lastplayed">
+		<text name="md_lbl_gametime">
 			<pos>0.5 0.865</pos>
 			<size>0.345833333333333 0.025</size>
 		</text>
 		
-		<datetime name="md_lastplayed">
+		<datetime name="md_gametime">
 			<pos>0.73 0.865</pos>
 			<size>0.345833333333333 0.025</size>
 		</datetime>

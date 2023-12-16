@@ -8,7 +8,7 @@ license:		creative commons CC-BY-NC-SA
 based on:       Switch Theme for Launchbox by Grila
 -->
 
-<theme defaultView="grid">
+<theme defaultView="grid" defaultTransition="instant">
 	<formatVersion>7</formatVersion>
 	
 	<include>./_art/xml/artworklogos.xml</include>
@@ -111,7 +111,7 @@ based on:       Switch Theme for Launchbox by Grila
 			<pos>1 1</pos>
 		</image>
 			
-		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description" extra="true">
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description, md_lbl_gametime, md_gametime" extra="true">
 			<forceUppercase>0</forceUppercase>
 			<fontPath>${mainFont}</fontPath>
 		</text>
@@ -173,7 +173,7 @@ based on:       Switch Theme for Launchbox by Grila
 			<unfilledPath>./../assets/dark/unfilled_rating.svg</unfilledPath>
 		</rating>
 			
-		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description">
+		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description, md_lbl_gametime, md_gametime">
 			<color>${secondaryColor}</color>
 		</text>
 	</view>
@@ -231,17 +231,52 @@ based on:       Switch Theme for Launchbox by Grila
 			<inactive>./../_art/assets/textinput_inactive.png</inactive>
 			<active>./../_art/assets/textinput_active.png</active>
 		</menuTextEdit>
+		<menuIcons name="menuicons">
+         <iconSystem>./_inc/images/menu-icon-system.svg</iconSystem>
+         <iconUpdates>./_inc/images/menu-icon-update.svg</iconUpdates>
+         <iconControllers>./_inc/images/menu-icon-controller.svg</iconControllers>
+         <iconGames>./_inc/images/menu-icon-games.svg</iconGames>
+         <iconUI>./_inc/images/menu-icon-ui.svg</iconUI>
+         <iconSound>./_inc/images/menu-icon-sound.svg</iconSound>
+         <iconNetwork>./_inc/images/menu-icon-network.svg</iconNetwork>
+         <iconScraper>./_inc/images/menu-icon-scraper.svg</iconScraper>
+         <iconAdvanced>./_inc/images/menu-icon-advanced.svg</iconAdvanced>
+         <iconQuit>./_inc/images/menu-icon-quit.svg</iconQuit>
+         <iconRetroachievements>./_inc/images/menu-icon-achievements.svg</iconRetroachievements>
+         <iconKodi>./_inc/images/menu-icon-kodi.svg</iconKodi>
+         <iconRestart>./_inc/images/menu-icon-restart.svg</iconRestart>
+         <iconShutdown>./_inc/images/menu-icon-shutdown.svg</iconShutdown>
+         <iconFastShutdown>./_inc/images/menu-icon-shutdown.svg</iconFastShutdown>
+      </menuIcons>
+	</view>
+
+	<!-- <feature supported="carousel">
+		<view name="system">
+			<text name="systemInfo">
+				<color>${mainColor}</color>
+				<defaultTransition>instant</defaultTransition>
+			</text>
+		</view>
+	</feature> -->
+
+	<view name="system">
+		 <carousel name="systemcarousel">
+		 	<defaultTransition>instant</defaultTransition>
+		 </carousel>
+		<text name="systemInfo">
+			<color>${mainColor}</color>
+		</text>
 	</view>
 
 	<feature supported="carousel">
-		<view name="system">
-			<text name="systemInfo">
-			<color>${mainColor}</color>
-		</text>
-		</view>
+		
 	</feature>
 	
 	<view name="screen">
+		<controllerActivity name="controllerActivity">
+         	<visible>false</visible>
+      	</controllerActivity>
+
 		<text name="clock">
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>0.04</fontSize>
@@ -252,7 +287,17 @@ based on:       Switch Theme for Launchbox by Grila
 			<verticalAlignment>center</verticalAlignment>
 		</text>
 		<batteryIndicator name="batteryIndicator">
-			<color>${mainColor}</color>
-		</batteryIndicator>
+		 <pos>-0.03 0.01</pos>
+         <size>0.978125 0.05</size>
+         <color>${mainColor}</color>
+         <itemSpacing>0</itemSpacing>
+         <full>./_inc/images/battery-100-vertical.svg</full>
+         <at75>./_inc/images/battery-75-vertical.svg</at75>
+         <at50>./_inc/images/battery-50-vertical.svg</at50>
+         <at25>./_inc/images/battery-25-vertical.svg</at25>
+         <empty>./_inc/images/battery-0-vertical.svg</empty>
+         <incharge>./_inc/images/battery-charging-vertical.svg</incharge>
+         <networkIcon>./_inc/images/wifi-vertical.svg</networkIcon>
+      </batteryIndicator>
 	</view>
 </theme>
