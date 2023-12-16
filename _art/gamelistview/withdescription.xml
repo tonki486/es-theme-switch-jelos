@@ -16,9 +16,10 @@
 			<pos>0.50 0.685</pos>
 			<size>0.5 0.244</size>
 			<alignment>center</alignment>
-			<color>${mainColor}</color>
+			<color>${secondaryColor}</color>
 			<fontSize>0.032</fontSize>
 			<fontPath>./../_art/Acre.otf</fontPath>
+			<lineSpacing>1.2</lineSpacing>
 		</text>
 
 		<text name="md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
