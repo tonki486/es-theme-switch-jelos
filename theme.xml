@@ -1,16 +1,15 @@
 <!--
-Fork by:        Jetup13
-theme name:		Switch
-version:		4.4
-OG author:		Lilbud
-email:			bvw20002010@gmail.com
-license:		creative commons CC-BY-NC-SA
-based on:       Switch Theme for Launchbox by Grila
+Fork by:    tonki486
+theme name: Switch
+version:    4.4
+OG authors: Lilbud, Jetup13
+license:    creative commons CC-BY-NC-SA
+based on:   Switch Theme for Launchbox by Grila
 -->
 
 <theme defaultView="grid" defaultTransition="instant">
 	<formatVersion>7</formatVersion>
-	
+
 	<include>./_art/xml/artworklogos.xml</include>
 	<include>./_art/xml/hidden.xml</include>
 	<include>./_art/xml/icons.xml</include>
@@ -26,7 +25,7 @@ based on:       Switch Theme for Launchbox by Grila
 		<tabb>Show Top and Bottom Bar</tabb>
 		<forceupper>Force Uppercase</forceupper>
 	</variables>
-	
+
 	<subset name="colorset" displayName="${subset.colorset}">
 		<include name="dark">./_art/colors/dark.xml</include>
 		<include name="royal blue">./_art/colors/royalblue.xml</include>
@@ -48,13 +47,13 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="light">./_art/colors/light.xml</include>
 		<include name="black">./_art/colors/black.xml</include>
 	</subset>
-	
+
 	<subset name="systemview" displayName="${systemview}">
 		<include name="default">./_art/systemview/default.xml</include>
 		<include name="small">./_art/systemview/small.xml</include>
 		<include name="rgb30">./_art/systemview/rgb30.xml</include>
 	</subset>
-	
+
 	<subset name="gamelistview" displayName="${gamelistview}">
 		<include name="nometa" displayName="No Metadata" />
 		<include name="withdescription" displayName="w/ Description" />
@@ -67,19 +66,19 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="Uncentered w/Loop">./_art/xml/gridloop.xml</include>
 		<include name="Uncentered wo/Loop">./_art/xml/gridnoloop.xml</include>
 	</subset>
-	
+
 	<subset name="Top and Bottom Bar" displayName="${tabb}">
 		<include name="yes">./_art/xml/topandbottomline.xml</include>
 		<include name="no"/>
 	</subset>
-	
+
 	<subset name="Force Uppercase" displayName="${forceupper}">
 		<include name="System Name and Gamelist">./_art/xml/forceuppercaseall.xml</include>
 		<include name="System Name Only">./_art/xml/forceuppercasesystemname.xml</include>
 		<include name="Gamelist Only">./_art/xml/forceuppercasegamelist.xml</include>
 		<include name="no"/>
 	</subset>
-	
+
 	<view name="system, basic, detailed, video, grid">
 		<image name="background" extra="true">
 			<pos>0 0</pos>
@@ -90,32 +89,32 @@ based on:       Switch Theme for Launchbox by Grila
 			<zIndex>-100</zIndex>
 		</image>
 	</view>
-	
+
 	<view name="basic">
 		<textlist name="gamelist">
 			<fontPath>${mainFont}</fontPath>
 			<scrollSound>./_art/assets/Move.wav</scrollSound>
 			<size>1 .8</size>
-		</textlist>	
+		</textlist>
 	</view>
-	
+
 	<view name="detailed, video">
 		<textlist name="gamelist">
 			<fontPath>${mainFont}</fontPath>
 			<scrollSound>./_art/assets/Move.wav</scrollSound>
-		</textlist>	
-			
+		</textlist>
+
 		<image name="logo">
 			<color>00000000</color>
 			<path>./assets/box.png</path>
 			<pos>1 1</pos>
 		</image>
-			
+
 		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_gametime" extra="true">
 			<forceUppercase>0</forceUppercase>
 			<fontPath>${mainFont}</fontPath>
 		</text>
-			
+
 		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_gametime">
 			<pos>1 1</pos>
 		</text>
@@ -129,54 +128,54 @@ based on:       Switch Theme for Launchbox by Grila
 			<format>%Y</format>
 		</datetime>
 
-			<image name="md_releasedate_icon,md_players_icon,md_developer_icon,md_publisher_icon,md_genre_icon,md_lastplayed_icon,md_playcount_icon,md_gametime_icon" extra="true">
-        	<origin>0 0.5</origin>
-        	<pos>1 1</pos>
-        	<color>${secondaryColor}</color>
-    	</image>
-      <image name="md_releasedate_icon">
-         <path>./_art/assets/icon-releasedate.svg</path>
-      </image>
-      <image name="md_players_icon">
-         <path>./_art/assets/icon-players.svg</path>
-      </image>
-      <image name="md_playcount_icon">
-         <path>./_art/assets/icon-playcount.svg</path>
-      </image>
-      <image name="md_gametime_icon">
-         <path>./_art/assets/icon-gametime.svg</path>
-      </image>
-      <image name="md_lastplayed_icon">
-         <path>./_art/assets/icon-lastplayed.svg</path>
-      </image>
-      <image name="md_genre_icon">
-         <path>./_art/assets/icon-genre.svg</path>
-      </image>
-      <image name="md_developer_icon">
-         <path>./_art/assets/icon-developer.svg</path>
-      </image>
-      <image name="md_publisher_icon">
-         <path>./_art/assets/icon-publisher.svg</path>
-      </image>
+		<image name="md_releasedate_icon,md_players_icon,md_developer_icon,md_publisher_icon,md_genre_icon,md_lastplayed_icon,md_playcount_icon,md_gametime_icon" extra="true">
+			<origin>0 0.5</origin>
+			<pos>1 1</pos>
+			<color>${secondaryColor}</color>
+		</image>
+		<image name="md_releasedate_icon">
+			<path>./_art/assets/icon-releasedate.svg</path>
+		</image>
+		<image name="md_players_icon">
+			<path>./_art/assets/icon-players.svg</path>
+		</image>
+		<image name="md_playcount_icon">
+			<path>./_art/assets/icon-playcount.svg</path>
+		</image>
+		<image name="md_gametime_icon">
+			<path>./_art/assets/icon-gametime.svg</path>
+		</image>
+		<image name="md_lastplayed_icon">
+			<path>./_art/assets/icon-lastplayed.svg</path>
+		</image>
+		<image name="md_genre_icon">
+			<path>./_art/assets/icon-genre.svg</path>
+		</image>
+		<image name="md_developer_icon">
+			<path>./_art/assets/icon-developer.svg</path>
+		</image>
+		<image name="md_publisher_icon">
+			<path>./_art/assets/icon-publisher.svg</path>
+		</image>
 	</view>
-	
+
 	<view name="system, video, detailed, basic, grid">
 		<helpsystem name="help">
 			<origin>-9 1</origin>
 		</helpsystem>
-		</view>
+	</view>
 
-		<view name="system">
-			<text name="system_name_1" extra="true">
+	<view name="system">
+		<text name="system_name_1" extra="true">
 			<color>${mainColor}</color>
 		</text>
-			
+
 		<image name="arrowblock" extra="true">
 			<color>${mainColor}</color>
 		</image>
-		</view>
-			
-		<view name="system, basic, detailed, video, grid">
+	</view>
+
+	<view name="system, basic, detailed, video, grid">
 		<image name="background">
 			<color>${backgroundColor}</color>
 		</image>
@@ -184,49 +183,49 @@ based on:       Switch Theme for Launchbox by Grila
 		<!-- <image name="topline, bottomline" extra="true">
 			<color>${secondaryColor}</color>
 		</image> -->
-			
+
 		<image name="gamelistbuttons, systembuttons" extra="true">
 			<color>${secondaryColor}</color>
 		</image>
 	</view>
-	
+
 	<view name="detailed, video, grid">
 		<textlist name="gamelist">
 			<selectedColor>${selectedColor}</selectedColor>
 			<primaryColor>${secondaryColor}</primaryColor>
 			<secondaryColor>${secondaryColor}</secondaryColor>
 			<selectorColor>${mainColor}00</selectorColor>
-		</textlist>	
-			
+		</textlist>
+
 		<rating name="md_rating">
 			<filledPath>./_art/assets/icon-star-filled.svg</filledPath>
 			<unfilledPath>./_art/assets/icon-star-unfilled.svg</unfilledPath>
 		</rating>
-			
+
 		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description, md_lbl_gametime, md_gametime">
 			<color>${secondaryColor}</color>
 		</text>
 	</view>
-	
+
 	<view name="basic, detailed, video, grid">
 		<text name="system_name_1" extra="true">
 			<color>${mainColor}</color>
 		</text>
-		
+
 		<image name="arrowblock" extra="true">
 			<color>${mainColor}</color>
 		</image>
 	</view>
-	
+
 	<view name="basic">
 		<textlist name="gamelist">
-		<selectedColor>${selectedColor}</selectedColor>
-		<primaryColor>${secondaryColor}</primaryColor>
-		<secondaryColor>${secondaryColor}</secondaryColor>
-		<selectorColor>00000000</selectorColor>
-		</textlist>	
+			<selectedColor>${selectedColor}</selectedColor>
+			<primaryColor>${secondaryColor}</primaryColor>
+			<secondaryColor>${secondaryColor}</secondaryColor>
+			<selectorColor>00000000</selectorColor>
+		</textlist>
 	</view>
- 
+
 	<view name="grid">
 		<text name="md_name">
 			<color>${mainColor}</color>
@@ -235,56 +234,56 @@ based on:       Switch Theme for Launchbox by Grila
 			<color>${mainColor}</color>
 		</ninepatch>
 	</view>
-	
+
 	<view name="menu">
 		<menuBackground name="menubg">
 			<color>${backgroundColor}</color>
 		</menuBackground>
-		
+
 		<menuText name="menutext, menutitle">
 			<fontPath>${mainFont}</fontPath>
 			<fontSize>.040</fontSize>
 			<color>${secondaryColor}</color>
 			<separatorColor>${mainColor}</separatorColor>
 		</menuText>
-		
+
 		<menuText name="menufooter, menutextsmall">
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>.029</fontSize>		 
+			<fontSize>.029</fontSize>
 			<color>${secondaryColor}</color>
 		</menuText>
-		
+
 		<menuTextEdit name="menutextedit">
 			<inactive>./../_art/assets/textinput_inactive.png</inactive>
 			<active>./../_art/assets/textinput_active.png</active>
 		</menuTextEdit>
 
-	<menuGroup name="menugroup">
-         <fontPath>${mainFont}</fontPath>
-		 <fontSize>.038</fontSize>
-         <color>${mainColor}</color>
-         <separatorColor>${separatorColor}</separatorColor>
-         <selectedColor>${selectedColor}</selectedColor>
-         <lineSpacing>2</lineSpacing>
-      </menuGroup>
+		<menuGroup name="menugroup">
+			<fontPath>${mainFont}</fontPath>
+			<fontSize>.038</fontSize>
+			<color>${mainColor}</color>
+			<separatorColor>${separatorColor}</separatorColor>
+			<selectedColor>${selectedColor}</selectedColor>
+			<lineSpacing>2</lineSpacing>
+		</menuGroup>
 
-	<menuIcons name="menuicons">
-         <iconSystem>./_art/assets/menu-icon-system.svg</iconSystem>
-         <iconUpdates>./_art/assets/menu-icon-update.svg</iconUpdates>
-         <iconControllers>./_art/assets/menu-icon-controller.svg</iconControllers>
-         <iconGames>./_art/assets/menu-icon-games.svg</iconGames>
-         <iconUI>./_art/assets/menu-icon-ui.svg</iconUI>
-         <iconSound>./_art/assets/menu-icon-sound.svg</iconSound>
-         <iconNetwork>./_art/assets/menu-icon-network.svg</iconNetwork>
-         <iconScraper>./_art/assets/menu-icon-scraper.svg</iconScraper>
-         <iconAdvanced>./_art/assets/menu-icon-advanced.svg</iconAdvanced>
-         <iconQuit>./_art/assets/menu-icon-quit.svg</iconQuit>
-         <iconRetroachievements>./_art/assets/menu-icon-achievements.svg</iconRetroachievements>
-         <iconKodi>./_art/assets/menu-icon-kodi.svg</iconKodi>
-         <iconRestart>./_art/assets/menu-icon-restart.svg</iconRestart>
-         <iconShutdown>./_art/assets/menu-icon-shutdown.svg</iconShutdown>
-         <iconFastShutdown>./_art/assets/menu-icon-shutdown.svg</iconFastShutdown>
-      </menuIcons>
+		<menuIcons name="menuicons">
+			<iconSystem>./_art/assets/menu-icon-system.svg</iconSystem>
+			<iconUpdates>./_art/assets/menu-icon-update.svg</iconUpdates>
+			<iconControllers>./_art/assets/menu-icon-controller.svg</iconControllers>
+			<iconGames>./_art/assets/menu-icon-games.svg</iconGames>
+			<iconUI>./_art/assets/menu-icon-ui.svg</iconUI>
+			<iconSound>./_art/assets/menu-icon-sound.svg</iconSound>
+			<iconNetwork>./_art/assets/menu-icon-network.svg</iconNetwork>
+			<iconScraper>./_art/assets/menu-icon-scraper.svg</iconScraper>
+			<iconAdvanced>./_art/assets/menu-icon-advanced.svg</iconAdvanced>
+			<iconQuit>./_art/assets/menu-icon-quit.svg</iconQuit>
+			<iconRetroachievements>./_art/assets/menu-icon-achievements.svg</iconRetroachievements>
+			<iconKodi>./_art/assets/menu-icon-kodi.svg</iconKodi>
+			<iconRestart>./_art/assets/menu-icon-restart.svg</iconRestart>
+			<iconShutdown>./_art/assets/menu-icon-shutdown.svg</iconShutdown>
+			<iconFastShutdown>./_art/assets/menu-icon-shutdown.svg</iconFastShutdown>
+		</menuIcons>
 	</view>
 
 	<!-- <feature supported="carousel">
@@ -297,18 +296,18 @@ based on:       Switch Theme for Launchbox by Grila
 	</feature> -->
 
 	<view name="system">
-		 <carousel name="systemcarousel">
-		 	<defaultTransition>instant</defaultTransition>
-		 </carousel>
+		<carousel name="systemcarousel">
+			<defaultTransition>instant</defaultTransition>
+		</carousel>
 		<text name="systemInfo">
 			<color>${mainColor}</color>
 		</text>
 	</view>
-	
+
 	<view name="screen">
 		<controllerActivity name="controllerActivity">
-         	<visible>false</visible>
-      	</controllerActivity>
+			<visible>false</visible>
+		</controllerActivity>
 
 		<text name="clock">
 			<fontPath>${mainFont}</fontPath>
@@ -320,21 +319,21 @@ based on:       Switch Theme for Launchbox by Grila
 			<verticalAlignment>center</verticalAlignment>
 		</text>
 		<batteryIndicator name="batteryIndicator">
-		 <pos>-0.03 0.01</pos>
-         <size>0.978125 0.05</size>
-         <color>${mainColor}</color>
-         <itemSpacing>0</itemSpacing>
-         <full>./_art/assets/battery-100-vertical.svg</full>
-         <at75>./_art/assets/battery-75-vertical.svg</at75>
-         <at50>./_art/assets/battery-50-vertical.svg</at50>
-         <at25>./_art/assets/battery-25-vertical.svg</at25>
-         <empty>./_art/assets/battery-0-vertical.svg</empty>
-         <incharge>./_art/assets/battery-charging-vertical.svg</incharge>
-         <networkIcon>./_art/assets/wifi-vertical.svg</networkIcon>
-      </batteryIndicator>
+			<pos>-0.03 0.01</pos>
+			<size>0.978125 0.05</size>
+			<color>${mainColor}</color>
+			<itemSpacing>0</itemSpacing>
+			<full>./_art/assets/battery-100-vertical.svg</full>
+			<at75>./_art/assets/battery-75-vertical.svg</at75>
+			<at50>./_art/assets/battery-50-vertical.svg</at50>
+			<at25>./_art/assets/battery-25-vertical.svg</at25>
+			<empty>./_art/assets/battery-0-vertical.svg</empty>
+			<incharge>./_art/assets/battery-charging-vertical.svg</incharge>
+			<networkIcon>./_art/assets/wifi-vertical.svg</networkIcon>
+		</batteryIndicator>
 	</view>
 
 	<include ifSubset="gamelistview:nometa">./_art/gamelistview/nometa.xml</include>
-   	<include ifSubset="gamelistview:withdescription">./_art/gamelistview/withdescription.xml</include>
+	<include ifSubset="gamelistview:withdescription">./_art/gamelistview/withdescription.xml</include>
 	<include ifSubset="gamelistview:withmetadata">./_art/gamelistview/withmeta.xml</include>
 </theme>

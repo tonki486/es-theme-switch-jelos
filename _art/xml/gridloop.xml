@@ -1,8 +1,8 @@
 <theme>
-<formatVersion>7</formatVersion>
+	<formatVersion>7</formatVersion>
 	<view name="grid">
-	<imagegrid name="gamegrid">
-		<scrollLoop>true</scrollLoop>
-	</imagegrid>
+		<imagegrid name="gamegrid">
+			<scrollLoop>true</scrollLoop>
+		</imagegrid>
 	</view>
 </theme>

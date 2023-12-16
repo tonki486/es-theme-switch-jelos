@@ -23,7 +23,7 @@
 		<rating name="md_rating">
 			<pos>1 1</pos>
 		</rating>
-		
+
 		<text name="system_name_1" extra="true">
 			<text>${system.fullName}</text>
 			<size>0.95 0.015</size>

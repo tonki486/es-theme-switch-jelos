@@ -1,7 +1,7 @@
 <theme>
 	<formatVersion>7</formatVersion>
 
-    <view name="detailed,video">
+	<view name="detailed,video">
 		<textlist name="gamelist">
 			<fontPath>./../_art/Acre.otf</fontPath>
 			<fontSize>0.04</fontSize>
@@ -35,13 +35,13 @@
 		<text name="md_genre">
 			<pos>0.56 0.715</pos>
 			<size>0.45 0.025</size>
-		</text>	
-		
+		</text>
+
 		<image name="md_releasedate_icon">
 			<pos>0.5 0.78</pos>
 			<size>0.0375 0.0375</size>
 		</image>
-		
+
 		<datetime name="md_releasedate">
 			<pos>0.56 0.77</pos>
 			<size>0.45 0.025</size>
@@ -69,12 +69,12 @@
 			<pos>0.5 0.885</pos>
 			<size>0.0375 0.0375</size>
 		</image>
-		
+
 		<text ifSubset="systemview:rgb30" name="md_gametime">
 			<pos>0.56 0.8725</pos>
 			<size>0.45 0.025</size>
 		</text>
-			
+
 		<text name="system_name_1" extra="true">
 			<text>${system.fullName}</text>
 			<size>0.95 0.015</size>

@@ -1,9 +1,9 @@
 <theme>
 	<formatVersion>7</formatVersion>
-	
-    <!-- Color Variables -->
+
+	<!-- Color Variables -->
 	<variables>
-	    <mainFont>./../_art/Acre.otf</mainFont>
+		<mainFont>./../_art/Acre.otf</mainFont>
 		<backgroundColor>2d2d2d</backgroundColor>
 		<mainColor>ffffff</mainColor>
 		<secondaryColor>fefefe</secondaryColor>
@@ -18,5 +18,4 @@
 			<size>1 1</size>
 		</image>
 	</view>
-
 </theme>
