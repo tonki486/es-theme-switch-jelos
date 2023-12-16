@@ -243,8 +243,9 @@ based on:       Switch Theme for Launchbox by Grila
 		
 		<menuText name="menutext, menutitle">
 			<fontPath>${mainFont}</fontPath>
-			<fontSize>.038</fontSize>
+			<fontSize>.040</fontSize>
 			<color>${secondaryColor}</color>
+			<separatorColor>${mainColor}</separatorColor>
 		</menuText>
 		
 		<menuText name="menufooter, menutextsmall">
@@ -253,14 +254,20 @@ based on:       Switch Theme for Launchbox by Grila
 			<color>${secondaryColor}</color>
 		</menuText>
 		
-		<menuText name="menutext, menutitle">
-			<separatorColor>${mainColor}</separatorColor>
-		</menuText>
-		
 		<menuTextEdit name="menutextedit">
 			<inactive>./../_art/assets/textinput_inactive.png</inactive>
 			<active>./../_art/assets/textinput_active.png</active>
 		</menuTextEdit>
+
+		<menuGroup name="menugroup">
+         <fontPath>${mainFont}</fontPath>
+		 <fontSize>.038</fontSize>
+         <color>${mainColor}</color>
+         <separatorColor>${separatorColor}</separatorColor>
+         <selectedColor>${selectedColor}</selectedColor>
+         <lineSpacing>2</lineSpacing>
+      </menuGroup>
+
 		<menuIcons name="menuicons">
          <iconSystem>./_art/assets/menu-icon-system.svg</iconSystem>
          <iconUpdates>./_art/assets/menu-icon-update.svg</iconUpdates>
