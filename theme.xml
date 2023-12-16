@@ -16,7 +16,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<include>./_art/xml/icons.xml</include>
 	<include>./_art/gamelistview/basicview.xml</include>
 	<include>./_art/gamelistview/gridview.xml</include>
-	
+
 	<variables>
 		<mainFont>./_art/Acre.otf</mainFont>
 		<subset.colorset>Theme Color</subset.colorset>
@@ -55,11 +55,11 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="rgb30">./_art/systemview/rgb30.xml</include>
 	</subset>
 	
-	<!-- <subset name="gamelistview" displayName="${gamelistview}">
-		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
-		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
-		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
-	</subset> -->
+	<subset name="gamelistview" displayName="${gamelistview}">
+		<include name="nometa" displayName="No Metadata" />
+		<include name="withdescription" displayName="w/ Description" />
+		<include name="withmetadata" displayName="w/ Metadata" />
+	</subset>
 
 	<subset name="Grid Selection" displayName="${gridselection}">
 		<include name="Default">./_art/xml/gridcenterselectionwithloop.xml</include>
@@ -259,7 +259,7 @@ based on:       Switch Theme for Launchbox by Grila
 			<active>./../_art/assets/textinput_active.png</active>
 		</menuTextEdit>
 
-		<menuGroup name="menugroup">
+	<menuGroup name="menugroup">
          <fontPath>${mainFont}</fontPath>
 		 <fontSize>.038</fontSize>
          <color>${mainColor}</color>
@@ -268,7 +268,7 @@ based on:       Switch Theme for Launchbox by Grila
          <lineSpacing>2</lineSpacing>
       </menuGroup>
 
-		<menuIcons name="menuicons">
+	<menuIcons name="menuicons">
          <iconSystem>./_art/assets/menu-icon-system.svg</iconSystem>
          <iconUpdates>./_art/assets/menu-icon-update.svg</iconUpdates>
          <iconControllers>./_art/assets/menu-icon-controller.svg</iconControllers>
@@ -304,10 +304,6 @@ based on:       Switch Theme for Launchbox by Grila
 			<color>${mainColor}</color>
 		</text>
 	</view>
-
-	<feature supported="carousel">
-		
-	</feature>
 	
 	<view name="screen">
 		<controllerActivity name="controllerActivity">
@@ -338,9 +334,7 @@ based on:       Switch Theme for Launchbox by Grila
       </batteryIndicator>
 	</view>
 
-		<subset name="gamelistview" displayName="${gamelistview}">
-		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
-		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
-		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
-	</subset>
+	<include ifSubset="gamelistview:nometa">./_art/gamelistview/nometa.xml</include>
+   	<include ifSubset="gamelistview:withdescription">./_art/gamelistview/withdescription.xml</include>
+	<include ifSubset="gamelistview:withmetadata">./_art/gamelistview/withmeta.xml</include>
 </theme>
