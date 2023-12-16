@@ -16,6 +16,7 @@ based on:       Switch Theme for Launchbox by Grila
 	<include>./_art/xml/icons.xml</include>
 	<include>./_art/gamelistview/basicview.xml</include>
 	<include>./_art/gamelistview/gridview.xml</include>
+	
 	<variables>
 		<mainFont>./_art/Acre.otf</mainFont>
 		<subset.colorset>Theme Color</subset.colorset>
@@ -54,11 +55,11 @@ based on:       Switch Theme for Launchbox by Grila
 		<include name="rgb30">./_art/systemview/rgb30.xml</include>
 	</subset>
 	
-	<subset name="gamelistview" displayName="${gamelistview}">
+	<!-- <subset name="gamelistview" displayName="${gamelistview}">
 		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
 		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
 		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
-	</subset>
+	</subset> -->
 
 	<subset name="Grid Selection" displayName="${gridselection}">
 		<include name="Default">./_art/xml/gridcenterselectionwithloop.xml</include>
@@ -110,12 +111,12 @@ based on:       Switch Theme for Launchbox by Grila
 			<pos>1 1</pos>
 		</image>
 			
-		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description, md_lbl_gametime, md_gametime" extra="true">
+		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_gametime" extra="true">
 			<forceUppercase>0</forceUppercase>
 			<fontPath>${mainFont}</fontPath>
 		</text>
 			
-		<text name="md_lbl_publisher, md_publisher, md_lbl_rating, md_lbl_playcount, md_playcount">
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_gametime">
 			<pos>1 1</pos>
 		</text>
 
@@ -127,6 +128,36 @@ based on:       Switch Theme for Launchbox by Grila
 		<datetime name="md_releasedate">
 			<format>%Y</format>
 		</datetime>
+
+			<image name="md_releasedate_icon,md_players_icon,md_developer_icon,md_publisher_icon,md_genre_icon,md_lastplayed_icon,md_playcount_icon,md_gametime_icon" extra="true">
+        	<origin>0 0.5</origin>
+        	<pos>1 1</pos>
+        	<color>${secondaryColor}</color>
+    	</image>
+      <image name="md_releasedate_icon">
+         <path>./_art/assets/icon-releasedate.svg</path>
+      </image>
+      <image name="md_players_icon">
+         <path>./_art/assets/icon-players.svg</path>
+      </image>
+      <image name="md_playcount_icon">
+         <path>./_art/assets/icon-playcount.svg</path>
+      </image>
+      <image name="md_gametime_icon">
+         <path>./_art/assets/icon-gametime.svg</path>
+      </image>
+      <image name="md_lastplayed_icon">
+         <path>./_art/assets/icon-lastplayed.svg</path>
+      </image>
+      <image name="md_genre_icon">
+         <path>./_art/assets/icon-genre.svg</path>
+      </image>
+      <image name="md_developer_icon">
+         <path>./_art/assets/icon-developer.svg</path>
+      </image>
+      <image name="md_publisher_icon">
+         <path>./_art/assets/icon-publisher.svg</path>
+      </image>
 	</view>
 	
 	<view name="system, video, detailed, basic, grid">
@@ -299,4 +330,10 @@ based on:       Switch Theme for Launchbox by Grila
          <networkIcon>./_art/assets/wifi-vertical.svg</networkIcon>
       </batteryIndicator>
 	</view>
+
+		<subset name="gamelistview" displayName="${gamelistview}">
+		<include name="No Metadata">./_art/gamelistview/nometa.xml</include>
+		<include name="w/ Description">./_art/gamelistview/withdescription.xml</include>
+		<include name="w/ Metadata">./_art/gamelistview/withmeta.xml</include>
+	</subset>
 </theme>

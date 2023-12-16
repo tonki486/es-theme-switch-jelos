@@ -12,71 +12,68 @@
 			<size>.49 .78</size>
 		</textlist>
 
-		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_releasedate" extra="true">
+		<text name="md_developer, md_genre, md_releasedate, md_lastplayed, md_gametime" extra="true">
 			<fontSize>0.038</fontSize>
 		</text>
 
-		<text name="md_lbl_players">
-			<pos>0.5 0.4207</pos>
-			<size>0.345833333333333 0.025</size>
-		</text>
-		
-		<text name="md_players">
-			<pos>0.80 0.4107</pos>
-			<size>0.345833333333333 0.025</size>
-		</text>
-
-		<text name="md_lbl_genre">
-			<pos>0.5 0.750</pos>
-			<size>0.345833333333333 0.025</size>
-		</text>
-
-		<text name="md_genre">
-			<pos>0.68 0.750</pos>
-			<size>0.3 0.025</size>
-		</text>	
-
-		<text name="md_lbl_developer">
-			<pos>0.5 0.695</pos>
-			<size>0.345833333333333 0.025</size>
-		</text>
+		<!-- images are 27x27 pixels  on a 720px 1:1 display -->
+		<image name="md_developer_icon">
+			<pos>0.5 0.675</pos>
+			<size>0.0375 0.0375</size>
+		</image>
 
 		<text name="md_developer">
-			<pos>0.68 0.695</pos>
-			<size>0.3 0.025</size>
+			<pos>0.56 0.6625</pos>
+			<size>0.45 0.025</size>
+		</text>
+
+		<image name="md_genre_icon">
+			<pos>0.5 0.7275</pos>
+			<size>0.0375 0.0375</size>
+		</image>
+
+		<text name="md_genre">
+			<pos>0.56 0.715</pos>
+			<size>0.45 0.025</size>
 		</text>	
 		
+		<image name="md_releasedate_icon">
+			<pos>0.5 0.78</pos>
+			<size>0.0375 0.0375</size>
+		</image>
+		
 		<datetime name="md_releasedate">
-			<pos>0.68 0.81</pos>
-			<size>0.345833333333333 0.025</size>
+			<pos>0.56 0.77</pos>
+			<size>0.45 0.025</size>
 		</datetime>
 
-		<text name="md_lbl_releasedate">
-			<pos>0.5 0.81</pos>
-			<size>0.345833333333333 0.025</size>
-		</text>
-
-		<text name="md_lbl_gametime">
-			<pos>1 1</pos>
-		</text>
-		
-		<datetime name="md_gametime">
-			<pos>1 1</pos>
-		</datetime>
-
-		<text ifSubset="systemview:rgb30" name="md_lbl_gametime">
-			<pos>0.5 0.865</pos>
-			<size>0.345833333333333 0.025</size>
-		</text>
-		
-		<datetime ifSubset="systemview:rgb30" name="md_gametime">
-			<pos>0.73 0.865</pos>
-			<size>0.345833333333333 0.025</size>
-		</datetime>
-		
 		<datetime name="md_lastplayed">
 			<pos>1 1</pos>
 		</datetime>
+
+		<text name="md_gametime">
+			<pos>1 1</pos>
+		</text>
+
+		<image ifSubset="systemview:rgb30" name="md_lastplayed_icon">
+			<pos>0.5 0.8325</pos>
+			<size>0.0375 0.0375</size>
+		</image>
+
+		<datetime ifSubset="systemview:rgb30" name="md_lastplayed">
+			<pos>0.56 0.8225</pos>
+			<size>0.45 0.025</size>
+		</datetime>
+
+		<image ifSubset="systemview:rgb30" name="md_gametime_icon">
+			<pos>0.5 0.885</pos>
+			<size>0.0375 0.0375</size>
+		</image>
+		
+		<text ifSubset="systemview:rgb30" name="md_gametime">
+			<pos>0.56 0.8725</pos>
+			<size>0.45 0.025</size>
+		</text>
 			
 		<text name="system_name_1" extra="true">
 			<text>${system.fullName}</text>
