@@ -111,7 +111,7 @@ based on:       Switch Theme for Launchbox by Grila
 			<pos>1 1</pos>
 		</image>
 			
-		<text name="md_rating, md_developer, md_publisher, md_genre, md_players, md_playcount, md_gametime" extra="true">
+		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_gametime" extra="true">
 			<forceUppercase>0</forceUppercase>
 			<fontPath>${mainFont}</fontPath>
 		</text>
@@ -199,8 +199,8 @@ based on:       Switch Theme for Launchbox by Grila
 		</textlist>	
 			
 		<rating name="md_rating">
-			<filledPath>./../assets/dark/filled_rating.svg</filledPath>
-			<unfilledPath>./../assets/dark/unfilled_rating.svg</unfilledPath>
+			<filledPath>./_art/assets/icon-star-filled.svg</filledPath>
+			<unfilledPath>./_art/assets/icon-star-unfilled.svg</unfilledPath>
 		</rating>
 			
 		<text name="md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_genre, md_players, md_playcount, md_description, md_lbl_gametime, md_gametime">
