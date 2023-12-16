@@ -47,7 +47,7 @@
 		<padding>2 2</padding>
 	</gridtile>
 	
-	<text name="md_description, md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+	<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount, md_lbl_gametime, md_developer, md_publisher, md_genre, md_players, md_playcount, md_gametime">
 		<pos>1 1</pos>
 	</text>
 
