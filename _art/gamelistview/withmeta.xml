@@ -18,32 +18,38 @@
 
 		<!-- images are 27x27 pixels  on a 720px 1:1 display -->
 		<image name="md_developer_icon">
-			<pos>0.5 0.675</pos>
+			<pos>0.5 0.71</pos>
+			<pos ifSubset="systemview:rgb30">0.5 0.675</pos>
 			<size>0.0375 0.0375</size>
 		</image>
 
 		<text name="md_developer">
-			<pos>0.56 0.6625</pos>
+			<pos>0.56 0.695</pos>
+			<pos ifSubset="systemview:rgb30">0.56 0.6625</pos>
 			<size>0.45 0.025</size>
 		</text>
 
 		<image name="md_genre_icon">
-			<pos>0.5 0.7275</pos>
+			<pos>0.5 0.765</pos>
+			<pos ifSubset="systemview:rgb30">0.5 0.7275</pos>
 			<size>0.0375 0.0375</size>
 		</image>
 
 		<text name="md_genre">
-			<pos>0.56 0.715</pos>
+			<pos>0.56 0.750</pos>
+			<pos ifSubset="systemview:rgb30">0.56 0.715</pos>
 			<size>0.45 0.025</size>
 		</text>
 
 		<image name="md_releasedate_icon">
-			<pos>0.5 0.78</pos>
+			<pos>0.5 0.82</pos>
+			<pos ifSubset="systemview:rgb30">0.5 0.78</pos>
 			<size>0.0375 0.0375</size>
 		</image>
 
 		<datetime name="md_releasedate">
-			<pos>0.56 0.77</pos>
+			<pos>0.56 0.81</pos>
+			<pos ifSubset="systemview:rgb30">0.56 0.77</pos>
 			<size>0.45 0.025</size>
 		</datetime>
 
