@@ -4,7 +4,7 @@ System View - Light and Dark
 
 ![https://i.imgur.com/kt5GRJ5.png](https://i.imgur.com/kt5GRJ5.png)
 
-# Fork notes - tonki486
+# JELOS port notes - tonki486
 - This fork is currently only validated for use with the RGB30 (1:1 aspect ratio screen)
 - Replaced metadata labels in the video/detailed views by icons
 - Added additional "last played" and "play time" metadata fields when the selected system view is "RGB30"
